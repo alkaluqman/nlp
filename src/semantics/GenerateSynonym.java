@@ -45,10 +45,9 @@ public class GenerateSynonym implements Serializable{
 	
 	public void synonymMap() {
 		DocumentVector hitsvector1 = new DocumentVector();
-		DocumentVector hitsvector2 = new DocumentVector();
-		double stdDist;
+		
 		Stopwords sw = new Stopwords();
-		ArrayList<Pair<String, Double>> set= new ArrayList<Pair<String,Double>>();
+		//ArrayList<Pair<String, Double>> set= new ArrayList<Pair<String,Double>>();
 		try{
 		
 		String token = "";
@@ -61,46 +60,13 @@ public class GenerateSynonym implements Serializable{
 					if(!sw.is(token))
 					hitsvector1.incCount(token);
 				}
-				
-				//set= new ArrayList<Pair<String,Double>>();
-				File f=new File("testing_set\\"+string.getKey()+".txt");
-				FileWriter fw= new FileWriter(f);
-				PrintWriter pw = new PrintWriter(fw);
-				
-				for (Entry<String, ArrayList<String>> string1 : mapwm.entrySet()) {
-					for( int j=0; j< string1.getValue().size();j++){
-						hitsvector2 = new DocumentVector();
-						strtok = new StringTokenizer(string1.getValue().get(j));
-						while(strtok.hasMoreTokens()){
-							token = strtok.nextToken();
-							if(!sw.is(token))
-							hitsvector2.incCount(token);
-						}
-						
-						stdDist = hitsvector1.getCosineSimilarityWith(hitsvector2);
-						//System.out.println(stdDist);
-						// write word @i row : word@j, stdDist if not zero
-												
-						if(stdDist!=0){
-							pw.println(string.getKey()+" "+string1.getKey()+"  "+stdDist);
-							pw.flush();
-							System.out.println(string.getKey()+" "+string1.getKey()+"  "+stdDist);
-							//Pair<String,Double> word_score = new Pair<String, Double>(string1.getKey(),stdDist);
-							//set.add(word_score);
-						}
-					} // end of j
-					pw.close();
-					fw.close();
-					/*if(f.length()==0){
-						f.delete();
-					}*/
-					
-				}
-				// add to synset
-				//synset.put(string.getKey(), set);
 			}
+				//create new thread
+				SynonymThread vector= new SynonymThread(string.getKey(),hitsvector1);
+				new Thread(vector).start();
+				
+				
 		}
-		
 		}catch(Exception e){
 			e.printStackTrace();
 		}		
