@@ -3,9 +3,7 @@ package semantics;
 
 import java.util.ArrayList;
 
-import readFromXML.MakeMap;
 import readFromXML.Monier;
-import readFromXML.ReadXMLDOM;
 
 
 public class Main {
@@ -24,12 +22,9 @@ public class Main {
 		
 	
 		GenerateSynonym gs= new GenerateSynonym();
-		gs.deserializeMap(); System.out.println("Generating synonyms");
+		System.out.println("Generating synonyms");
 		gs.synonymMap();
-		System.out.println("Serializing");
-		//gs.displaySynset();
-		//gs.serializeSynset();
-		System.out.println("Completed");
+	
 	}
 		
 }

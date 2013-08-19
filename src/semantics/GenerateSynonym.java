@@ -3,27 +3,42 @@ package semantics;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
-import java.io.FileWriter;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
-import java.io.PrintWriter;
 import java.io.Serializable;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.attribute.FileAttribute;
+import java.nio.file.attribute.PosixFilePermission;
+import java.nio.file.attribute.PosixFilePermissions;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 import java.util.StringTokenizer;
 import java.util.Map.Entry;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
 import semantics.DocumentVector;
 import semantics.Stopwords;
-import java.util.Iterator;
 import semantics.Pair;
 
 public class GenerateSynonym implements Serializable{
 
-	private Map<String, ArrayList<String>> mapwm = new HashMap<String, ArrayList<String>>();
+	public static Map<String, ArrayList<String>> mapwm = new HashMap<String, ArrayList<String>>();
 	private Map<String, ArrayList<Pair<String,Double>>> synset = new HashMap<String, ArrayList<Pair<String,Double>>>();
+	private final int NUM_THREADS= Runtime.getRuntime().availableProcessors() +1;
+	private final ExecutorService executor = Executors.newFixedThreadPool(NUM_THREADS);
 	
 	
+	
+	
+	public GenerateSynonym() {
+		deserializeMap();
+	}
+
 	public void deserializeMap(){
 		try{
 		FileInputStream fis = new FileInputStream("map.ser");
@@ -47,7 +62,27 @@ public class GenerateSynonym implements Serializable{
 		DocumentVector hitsvector1 = new DocumentVector();
 		
 		Stopwords sw = new Stopwords();
-		//ArrayList<Pair<String, Double>> set= new ArrayList<Pair<String,Double>>();
+		
+		//create results directory
+		try{
+		if(System.getProperty("os.name").startsWith("Windows")){
+			String path= new java.io.File(".").getCanonicalPath()+"\\results";
+			Path dir= Paths.get(path);
+			Files.createDirectory(dir);	
+		}
+		else{
+			FileAttribute<Set<PosixFilePermission>> perms= 
+					PosixFilePermissions.asFileAttribute(PosixFilePermissions.fromString("rwxrwxrwx")); 
+			String path= new java.io.File(".").getCanonicalPath()+"/results";
+			Files.createDirectory(Paths.get(path), perms);
+		}
+		
+		}
+		catch(Exception e){
+			e.printStackTrace();
+		}
+		
+		//threading
 		try{
 		
 		String token = "";
@@ -62,12 +97,17 @@ public class GenerateSynonym implements Serializable{
 				}
 			}
 				//create new thread
-				SynonymThread vector= new SynonymThread(string.getKey(),hitsvector1);
-				new Thread(vector).start();
+				/*SynonymThread vector= new SynonymThread(string.getKey(),hitsvector1);
+				new Thread(vector).start();*/
+			
+			//create thread pool
+			SynonymThread vector= new SynonymThread(string.getKey(),hitsvector1);
+			executor.execute(vector);
 				
 				
 		}
 		}catch(Exception e){
+			executor.shutdown();
 			e.printStackTrace();
 		}		
 		

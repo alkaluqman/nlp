@@ -1,6 +1,5 @@
 package readFromXML;
 
-import java.util.ArrayList;
 
 public class  Monier {
 
