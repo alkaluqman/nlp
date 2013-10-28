@@ -28,7 +28,7 @@ public class PopulateGraph {
 	    HAS_SYNONYM
 	}
 	
-	public synchronized static Node getOrCreateUniqueNode(final String word, final String meaning ){
+	public synchronized static Node getOrCreateUniqueNode(final String word){
 		
 		factory = new UniqueFactory.UniqueNodeFactory(graphDB, "users") {
 		      @Override
@@ -36,21 +36,20 @@ public class PopulateGraph {
 		        created.setProperty("id", properties.get("id"));
 
 		        created.setProperty("word", word);
-		        created.setProperty("meaning", meaning);
 		      }
 		    };
 
 		    return factory.getOrCreate("id", word);
 	}
 	
-	public synchronized void insertIntoGraph(String word1, String meaning1, 
-			String word2, String meaning2, double docSimScore){
+	public synchronized void insertIntoGraph(String word1,
+			String word2, double docSimScore){
 		
 		// transaction
 		Transaction tx= graphDB.beginTx();
 		try{
-			Relationship rel= getOrCreateUniqueNode(word1, meaning1).
-			createRelationshipTo(getOrCreateUniqueNode(word2, meaning2), RelTypes.HAS_SYNONYM);
+			Relationship rel= getOrCreateUniqueNode(word1).
+			createRelationshipTo(getOrCreateUniqueNode(word2), RelTypes.HAS_SYNONYM);
 			rel.setProperty("score", docSimScore);
 						
 			tx.success();

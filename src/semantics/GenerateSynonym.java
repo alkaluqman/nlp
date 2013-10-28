@@ -1,17 +1,19 @@
 package semantics;
 
+import graph.PopulateGraph;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
-import java.nio.file.Files;
+/*import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.attribute.FileAttribute;
 import java.nio.file.attribute.PosixFilePermission;
-import java.nio.file.attribute.PosixFilePermissions;
+import java.nio.file.attribute.PosixFilePermissions;*/
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
@@ -63,7 +65,7 @@ public class GenerateSynonym implements Serializable{
 		
 		Stopwords sw = new Stopwords();
 		
-		//create results directory
+	/*	//create results directory
 		try{
 		if(System.getProperty("os.name").startsWith("Windows")){
 			String path= new java.io.File(".").getCanonicalPath()+"\\results";
@@ -80,7 +82,10 @@ public class GenerateSynonym implements Serializable{
 		}
 		catch(Exception e){
 			e.printStackTrace();
-		}
+		}*/
+		
+		// create neo4j graph
+		PopulateGraph graph= new PopulateGraph();
 		
 		//threading
 		try{
@@ -101,7 +106,7 @@ public class GenerateSynonym implements Serializable{
 				new Thread(vector).start();*/
 			
 			//create thread pool
-			SynonymThread vector= new SynonymThread(string.getKey(),hitsvector1);
+			SynonymThread vector= new SynonymThread(string.getKey(),hitsvector1,graph);
 			executor.execute(vector);
 				
 				
