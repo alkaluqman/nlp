@@ -30,7 +30,7 @@ public class PopulateGraph {
 	
 	public synchronized static Node getOrCreateUniqueNode(final String word){
 		
-		factory = new UniqueFactory.UniqueNodeFactory(graphDB, "users") {
+		factory = new UniqueFactory.UniqueNodeFactory(graphDB, "words") {
 		      @Override
 		      protected void initialize(Node created, Map<String, Object> properties) {
 		        created.setProperty("id", properties.get("id"));
@@ -51,7 +51,7 @@ public class PopulateGraph {
 			Relationship rel= getOrCreateUniqueNode(word1).
 			createRelationshipTo(getOrCreateUniqueNode(word2), RelTypes.HAS_SYNONYM);
 			rel.setProperty("score", docSimScore);
-						
+				//System.out.println("***Insert into graph "+word1+" "+word2+" "+docSimScore);		
 			tx.success();
 		}
 		catch(Exception e){

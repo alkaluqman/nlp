@@ -30,7 +30,7 @@ public class CreateGraph {
 	}
 	
 	public static void registerShutdownHook( final GraphDatabaseService graphDb ){
-		
+		System.out.println("Registered shut down hook");
 	    Runtime.getRuntime().addShutdownHook( new Thread(){
 	        public void run(){
 	            graphDb.shutdown();

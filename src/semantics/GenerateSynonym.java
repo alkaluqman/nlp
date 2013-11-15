@@ -16,12 +16,15 @@ import java.nio.file.attribute.PosixFilePermission;
 import java.nio.file.attribute.PosixFilePermissions;*/
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
+import java.util.Random;
 import java.util.Set;
 import java.util.StringTokenizer;
 import java.util.Map.Entry;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
 
 import semantics.DocumentVector;
 import semantics.Stopwords;
@@ -33,10 +36,7 @@ public class GenerateSynonym implements Serializable{
 	private Map<String, ArrayList<Pair<String,Double>>> synset = new HashMap<String, ArrayList<Pair<String,Double>>>();
 	private final int NUM_THREADS= Runtime.getRuntime().availableProcessors() +1;
 	private final ExecutorService executor = Executors.newFixedThreadPool(NUM_THREADS);
-	
-	
-	
-	
+
 	public GenerateSynonym() {
 		deserializeMap();
 	}
@@ -48,11 +48,11 @@ public class GenerateSynonym implements Serializable{
         mapwm = (HashMap<String, ArrayList<String>>) ois.readObject();
         ois.close();
         
-     /*   //testing
-        for (Entry<String, ArrayList<String>> word : mapwm.entrySet()) {
+       //testing
+      /*  for (Entry<String, ArrayList<String>> word : mapwm.entrySet()) {
 			 System.out.println("Word: "+word.getKey()+"\t Meaning: "+word.getValue());
-        }
-        */
+        }*/
+        
         
 		}
 		catch(Exception e){
@@ -64,6 +64,7 @@ public class GenerateSynonym implements Serializable{
 		DocumentVector hitsvector1 = new DocumentVector();
 		
 		Stopwords sw = new Stopwords();
+		
 		
 	/*	//create results directory
 		try{
@@ -91,6 +92,7 @@ public class GenerateSynonym implements Serializable{
 		try{
 		
 		String token = "";
+
 		for (Entry<String, ArrayList<String>> string : mapwm.entrySet()) {
 			for( int i=0; i<string.getValue().size(); i++){
 				hitsvector1 = new DocumentVector();
@@ -106,16 +108,22 @@ public class GenerateSynonym implements Serializable{
 				new Thread(vector).start();*/
 			
 			//create thread pool
-			SynonymThread vector= new SynonymThread(string.getKey(),hitsvector1,graph);
+			Runnable vector= new SynonymThread(string.getKey(),hitsvector1,graph);
 			executor.execute(vector);
-				
-				
+	
 		}
 		}catch(Exception e){
 			executor.shutdown();
 			e.printStackTrace();
 		}		
 		
+		try {
+			executor.shutdown();
+			executor.awaitTermination(5,TimeUnit.SECONDS);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 	public void displaySynset(){
@@ -132,7 +140,7 @@ public class GenerateSynonym implements Serializable{
 	
 	public void serializeSynset(){
 		try{
-		FileOutputStream fos = new FileOutputStream("synset.ser");
+		FileOutputStream fos = new FileOutputStream("Samplesynset.ser");
         ObjectOutputStream oos = new ObjectOutputStream(fos);
         oos.writeObject(synset);
         oos.flush();

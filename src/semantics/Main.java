@@ -1,9 +1,13 @@
 package semantics;
 
 
+import graph.CreateGraph;
+
 import java.util.ArrayList;
 
+import readFromXML.MakeMap;
 import readFromXML.Monier;
+import readFromXML.ReadXMLDOM;
 
 
 public class Main {
@@ -19,12 +23,10 @@ public class Main {
 		
 		MakeMap maps= new MakeMap(mList);
 		maps.mapWM();*/
-		
-	
+
 		GenerateSynonym gs= new GenerateSynonym();
 		System.out.println("Generating synonyms");
 		gs.synonymMap();
-	
 	}
 		
 }

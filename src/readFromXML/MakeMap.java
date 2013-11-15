@@ -8,7 +8,9 @@ import java.io.PrintWriter;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
+import java.util.Random;
 import java.util.Map.Entry;
 
 
@@ -27,7 +29,7 @@ public class MakeMap implements Serializable{
 	public void writeMap(Map<String, ArrayList<String>> map) {
 		
 		try {
-			FileWriter fw = new FileWriter("TempMap.txt");
+			FileWriter fw = new FileWriter("Map.txt");
 			PrintWriter pw = new PrintWriter(fw);
 
 			for (Entry<String, ArrayList<String>> word : map.entrySet()) {
@@ -66,6 +68,15 @@ public class MakeMap implements Serializable{
 	public void mapWM() {
 
 		ArrayList<String> meaningList= new ArrayList<String>();
+	/*//create random sample set of 10 words
+		
+		Random randomGenerator = new Random();
+		       		
+		
+		for(int i=0;i<10;i++){
+			int index = randomGenerator.nextInt(mList.size());
+			Monier word= mList.get(index);*/
+		
 		for (Monier word : mList) {
 			if(mapwm.containsKey(word.getKey1())){
 				meaningList= mapwm.get(word.getKey1());

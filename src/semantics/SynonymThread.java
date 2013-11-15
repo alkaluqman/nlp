@@ -82,7 +82,7 @@ public class SynonymThread implements Runnable{
 				}
 			/*	pw.close();
 				fw.close();*/
-				
+			//System.out.println("Thread finished");	
 			
 		}catch(Exception e){
 			e.printStackTrace();
