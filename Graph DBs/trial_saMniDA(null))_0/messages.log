@@ -1,0 +1,318 @@
+2013-11-15 18:52:01.462+0000 INFO  [org.neo4j]: --- INITIALIZED diagnostics START ---
+2013-11-15 18:52:01.479+0000 INFO  [org.neo4j]: Neo4j Kernel properties:
+    neostore.propertystore.db.mapped_memory=668M
+    neostore.nodestore.db.mapped_memory=185M
+    neostore.relationshipstore.db.mapped_memory=819M
+    neostore.propertystore.db.strings.mapped_memory=568M
+    store_dir=trial_saMniDA(null))_0
+    neostore.propertystore.db.arrays.mapped_memory=644M
+    ephemeral=false
+2013-11-15 18:52:01.486+0000 INFO  [org.neo4j]: Diagnostics providers:
+    org.neo4j.kernel.configuration.Config
+    org.neo4j.kernel.info.DiagnosticsManager
+    SYSTEM_MEMORY
+    JAVA_MEMORY
+    OPERATING_SYSTEM
+    JAVA_VIRTUAL_MACHINE
+    CLASSPATH
+    LIBRARY_PATH
+    SYSTEM_PROPERTIES
+    NETWORK
+2013-11-15 18:52:01.487+0000 INFO  [org.neo4j]: System memory information:
+    Total Physical memory: 47.99 GB
+    Free Physical memory: 44.31 GB
+    Committed virtual memory: 1.34 GB
+    Total swap space: 95.97 GB
+    Free swap space: 90.14 GB
+2013-11-15 18:52:01.492+0000 INFO  [org.neo4j]: JVM memory information:
+    Free  memory: 554.94 MB
+    Total memory: 735.88 MB
+    Max   memory: 10.66 GB
+    Garbage Collector: PS Scavenge: [PS Eden Space, PS Survivor Space]
+    Garbage Collector: PS MarkSweep: [PS Eden Space, PS Survivor Space, PS Old Gen, PS Perm Gen]
+    Memory Pool: Code Cache (Non-heap memory): committed=2.44 MB, used=606.13 kB, max=48.00 MB, threshold=0.00 B
+    Memory Pool: PS Eden Space (Heap memory): committed=192.06 MB, used=180.93 MB, max=3.94 GB, threshold=?
+    Memory Pool: PS Survivor Space (Heap memory): committed=31.94 MB, used=0.00 B, max=31.94 MB, threshold=?
+    Memory Pool: PS Old Gen (Heap memory): committed=511.88 MB, used=0.00 B, max=8.00 GB, threshold=0.00 B
+    Memory Pool: PS Perm Gen (Non-heap memory): committed=20.75 MB, used=6.27 MB, max=82.00 MB, threshold=0.00 B
+2013-11-15 18:52:01.499+0000 INFO  [org.neo4j]: Operating system information:
+    Operating System: Windows Server 2008 R2; version: 6.1; arch: amd64; cpus: 24
+    Process id: 7192@WIN-H9I0VFVUB37
+    Byte order: LITTLE_ENDIAN
+    Local timezone: Asia/Calcutta
+2013-11-15 18:52:01.515+0000 INFO  [org.neo4j]: JVM information:
+    VM Name: Java HotSpot(TM) 64-Bit Server VM
+    VM Vendor: Oracle Corporation
+    VM Version: 23.6-b04
+    JIT compiler: HotSpot 64-Bit Tiered Compilers
+    VM Arguments: [-Dfile.encoding=Cp1252]
+2013-11-15 18:52:01.516+0000 INFO  [org.neo4j]: Java classpath:
+     [bootstrap] C:\Program Files\Java\jre7\lib\resources.jar
+     [loader.1] file:/C:/Program%20Files/Java/jre7/lib/ext/zipfs.jar
+     [classpath + loader.0] file:/C:/Users/Puneet/NLProject/nlp-master/bin/
+     [classpath + loader.0] file:/C:/Users/Puneet/Workspace/neo4j-community-1.9.4/lib/scala-library-2.10.0.jar
+     [bootstrap] C:\Program Files\Java\jre7\classes
+     [classpath + loader.0] file:/C:/Users/Puneet/Workspace/neo4j-community-1.9.4/lib/server-api-1.9.4.jar
+     [loader.1] file:/C:/Program%20Files/Java/jre7/lib/ext/jaccess.jar
+     [bootstrap] C:\Program Files\Java\jre7\lib\jfr.jar
+     [bootstrap] C:\Program Files\Java\jre7\lib\jsse.jar
+     [loader.1] file:/C:/Program%20Files/Java/jre7/lib/ext/sunmscapi.jar
+     [classpath + loader.0] file:/C:/Users/Puneet/Workspace/neo4j-community-1.9.4/lib/geronimo-jta_1.1_spec-1.1.1.jar
+     [classpath + loader.0] file:/C:/Users/Puneet/Workspace/neo4j-community-1.9.4/lib/neo4j-graph-algo-1.9.4.jar
+     [bootstrap] C:\Program Files\Java\jre7\lib\rt.jar
+     [classpath + loader.0] file:/C:/Users/Puneet/Workspace/neo4j-community-1.9.4/lib/lucene-core-3.6.2.jar
+     [loader.1] file:/C:/Program%20Files/Java/jre7/lib/ext/access-bridge-64.jar
+     [classpath + loader.0] file:/C:/Users/Puneet/Workspace/neo4j-community-1.9.4/lib/concurrentlinkedhashmap-lru-1.3.1.jar
+     [bootstrap] C:\Program Files\Java\jre7\lib\charsets.jar
+     [classpath + loader.0] file:/C:/Users/Puneet/Workspace/neo4j-community-1.9.4/lib/neo4j-cypher-1.9.4.jar
+     [classpath + loader.0] file:/C:/Users/Puneet/Workspace/neo4j-community-1.9.4/lib/neo4j-jmx-1.9.4.jar
+     [loader.1] file:/C:/Program%20Files/Java/jre7/lib/ext/localedata.jar
+     [loader.1] file:/C:/Program%20Files/Java/jre7/lib/ext/sunjce_provider.jar
+     [classpath + loader.0] file:/C:/Users/Puneet/Workspace/neo4j-community-1.9.4/lib/neo4j-udc-1.9.4.jar
+     [classpath + loader.0] file:/C:/Users/Puneet/Workspace/neo4j-community-1.9.4/lib/neo4j-lucene-index-1.9.4.jar
+     [bootstrap] C:\Program Files\Java\jre7\lib\jce.jar
+     [bootstrap] C:\Program Files\Java\jre7\lib\sunrsasign.jar
+     [classpath + loader.0] file:/C:/Users/Puneet/Workspace/neo4j-community-1.9.4/lib/org.apache.servicemix.bundles.jline-0.9.94_1.jar
+     [classpath + loader.0] file:/C:/Users/Puneet/Workspace/neo4j-community-1.9.4/lib/neo4j-shell-1.9.4.jar
+     [loader.1] file:/C:/Program%20Files/Java/jre7/lib/ext/dnsns.jar
+     [classpath + loader.0] file:/C:/Users/Puneet/Workspace/neo4j-community-1.9.4/lib/neo4j-graph-matching-1.9.4.jar
+     [loader.1] file:/C:/Program%20Files/Java/jre7/lib/ext/sunec.jar
+     [classpath + loader.0] file:/C:/Users/Puneet/Workspace/neo4j-community-1.9.4/lib/neo4j-kernel-1.9.4.jar
+2013-11-15 18:52:01.521+0000 INFO  [org.neo4j]: Library path:
+    C:\Program Files\Java\jre7\bin
+    C:\Windows\Sun\Java\bin
+    C:\Windows\System32
+    C:\Windows
+    C:\gurobi510\win64\bin
+    C:\Windows\System32
+    C:\Windows
+    C:\Windows\System32\wbem
+    C:\Windows\System32\WindowsPowerShell\v1.0
+    C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn
+    C:\Program Files\Microsoft SQL Server\100\Tools\Binn
+    C:\Program Files\Microsoft SQL Server\100\DTS\Binn
+    C:\ILOG\CPLEX110\lib
+    C:\Program Files\Microsoft SQL Server\110\Tools\Binn
+    C:\Program Files\MATLAB\R2013a\bin
+    C:\Users\Puneet\NLProject\nlp-master
+2013-11-15 18:52:01.527+0000 INFO  [org.neo4j]: System.properties:
+    sun.boot.library.path = C:\Program Files\Java\jre7\bin
+    path.separator = ;
+    file.encoding.pkg = sun.io
+    user.country = US
+    user.script = 
+    sun.java.launcher = SUN_STANDARD
+    sun.os.patch.level = Service Pack 1
+    user.dir = C:\Users\Puneet\NLProject\nlp-master
+    user.variant = 
+    sun.jnu.encoding = Cp1252
+    sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+    user.home = C:\Users\Puneet
+    user.timezone = Asia/Calcutta
+    file.encoding = Cp1252
+    user.name = Puneet
+    sun.java.command = semantics.Main
+    sun.arch.data.model = 64
+    user.language = en
+    awt.toolkit = sun.awt.windows.WToolkit
+    file.separator = \
+    sun.io.unicode.encoding = UnicodeLittle
+    sun.cpu.endian = little
+    sun.desktop = windows
+    sun.cpu.isalist = amd64
+2013-11-15 18:52:01.528+0000 INFO  [org.neo4j]: Network information:
+    Interface Software Loopback Interface 1:
+        address: 127.0.0.1
+        address: 0:0:0:0:0:0:0:1
+    Interface WAN Miniport (SSTP):
+    Interface WAN Miniport (L2TP):
+    Interface WAN Miniport (PPTP):
+    Interface WAN Miniport (PPPOE):
+    Interface WAN Miniport (IPv6):
+    Interface WAN Miniport (Network Monitor):
+    Interface WAN Miniport (IP):
+    Interface RAS Async Adapter:
+    Interface WAN Miniport (IKEv2):
+    Interface Broadcom BCM5709C NetXtreme II GigE (NDIS VBD Client):
+        address: fe80:0:0:0:d024:95f8:c3cc:18b8%11
+    Interface Broadcom BCM5709C NetXtreme II GigE (NDIS VBD Client) #2:
+        address: 192.168.69.55
+        address: fe80:0:0:0:4868:546c:ccfb:c09f%12
+    Interface Microsoft ISATAP Adapter #2:
+    Interface Broadcom BCM5709C NetXtreme II GigE (NDIS VBD Client) #3:
+        address: fe80:0:0:0:f9b4:c1b8:32d2:2fb8%14
+    Interface Microsoft ISATAP Adapter #3:
+    Interface Broadcom BCM5709C NetXtreme II GigE (NDIS VBD Client) #4:
+        address: fe80:0:0:0:141e:48b4:bac0:ab26%16
+    Interface Microsoft ISATAP Adapter #4:
+    Interface Teredo Tunneling Pseudo-Interface:
+        address: fe80:0:0:0:0:100:7f:fffe%18
+    Interface Microsoft 6to4 Adapter:
+    Interface Broadcom BCM5709C NetXtreme II GigE (NDIS VBD Client) - VirtualBox Bridged Networking Driver Miniport:
+    Interface Broadcom BCM5709C NetXtreme II GigE (NDIS VBD Client) #2 - VirtualBox Bridged Networking Driver Miniport:
+    Interface Broadcom BCM5709C NetXtreme II GigE (NDIS VBD Client) #3 - VirtualBox Bridged Networking Driver Miniport:
+    Interface Broadcom BCM5709C NetXtreme II GigE (NDIS VBD Client) #4 - VirtualBox Bridged Networking Driver Miniport:
+    Interface VirtualBox Host-Only Ethernet Adapter:
+        address: 192.168.56.1
+        address: fe80:0:0:0:f40f:edac:9475:3602%24
+    Interface Microsoft ISATAP Adapter #5:
+        address: fe80:0:0:0:0:5efe:c0a8:3801%25
+    Interface Microsoft ISATAP Adapter:
+        address: fe80:0:0:0:0:5efe:c0a8:4537%26
+    Interface VMware Virtual Ethernet Adapter for VMnet1:
+        address: 172.16.233.1
+        address: fe80:0:0:0:5932:6403:2c0b:257b%27
+    Interface Microsoft ISATAP Adapter #6:
+        address: fe80:0:0:0:0:5efe:ac10:e901%28
+    Interface VMware Virtual Ethernet Adapter for VMnet8:
+        address: 172.16.139.1
+        address: fe80:0:0:0:d082:7cd1:c915:514f%29
+    Interface Microsoft ISATAP Adapter #7:
+        address: fe80:0:0:0:0:5efe:ac10:8b01%30
+    Interface WAN Miniport (Network Monitor)-QoS Packet Scheduler-0000:
+    Interface WAN Miniport (IP)-QoS Packet Scheduler-0000:
+    Interface WAN Miniport (IPv6)-QoS Packet Scheduler-0000:
+    Interface VirtualBox Host-Only Ethernet Adapter-QoS Packet Scheduler-0000:
+    Interface VirtualBox Host-Only Ethernet Adapter-WFP LightWeight Filter-0000:
+    Interface Broadcom BCM5709C NetXtreme II GigE (NDIS VBD Client) #2 - VirtualBox Bridged Networking Driver Miniport-QoS Packet Scheduler-0000:
+    Interface Broadcom BCM5709C NetXtreme II GigE (NDIS VBD Client) #2 - VirtualBox Bridged Networking Driver Miniport-WFP LightWeight Filter-0000:
+    Interface Broadcom BCM5709C NetXtreme II GigE (NDIS VBD Client) #3 - VirtualBox Bridged Networking Driver Miniport-QoS Packet Scheduler-0000:
+    Interface Broadcom BCM5709C NetXtreme II GigE (NDIS VBD Client) #3 - VirtualBox Bridged Networking Driver Miniport-WFP LightWeight Filter-0000:
+    Interface Broadcom BCM5709C NetXtreme II GigE (NDIS VBD Client) #4 - VirtualBox Bridged Networking Driver Miniport-QoS Packet Scheduler-0000:
+    Interface Broadcom BCM5709C NetXtreme II GigE (NDIS VBD Client) #4 - VirtualBox Bridged Networking Driver Miniport-WFP LightWeight Filter-0000:
+    Interface Broadcom BCM5709C NetXtreme II GigE (NDIS VBD Client) - VirtualBox Bridged Networking Driver Miniport-QoS Packet Scheduler-0000:
+    Interface Broadcom BCM5709C NetXtreme II GigE (NDIS VBD Client) - VirtualBox Bridged Networking Driver Miniport-WFP LightWeight Filter-0000:
+2013-11-15 18:52:02.060+0000 INFO  [org.neo4j]: --- INITIALIZED diagnostics END ---
+2013-11-15 18:52:02.235+0000 INFO  [org.neo4j]: Creating new db @ trial_saMniDA(null))_0\neostore
+2013-11-15 18:52:02.267+0000 INFO  [org.neo4j]: [trial_saMniDA(null))_0\neostore.nodestore.db] brickCount=0 brickSize=1939860b mappedMem=193986560b (storeSize=0b)
+2013-11-15 18:52:02.278+0000 INFO  [org.neo4j]: trial_saMniDA(null))_0\neostore.nodestore.db hit=1 miss=0 switches=0 ooe=0
+2013-11-15 18:52:02.311+0000 INFO  [org.neo4j]: [trial_saMniDA(null))_0\neostore.relationshiptypestore.db.names] brickCount=0 brickSize=0b mappedMem=0b (storeSize=38b)
+2013-11-15 18:52:02.316+0000 INFO  [org.neo4j]: [trial_saMniDA(null))_0\neostore.relationshiptypestore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2013-11-15 18:52:02.317+0000 INFO  [org.neo4j]: trial_saMniDA(null))_0\neostore.relationshiptypestore.db.names hit=0 miss=0 switches=0 ooe=0
+2013-11-15 18:52:02.319+0000 INFO  [org.neo4j]: trial_saMniDA(null))_0\neostore.relationshiptypestore.db hit=0 miss=0 switches=0 ooe=0
+2013-11-15 18:52:02.322+0000 INFO  [org.neo4j]: [trial_saMniDA(null))_0\neostore.relationshiptypestore.db.names] brickCount=0 brickSize=0b mappedMem=0b (storeSize=38b)
+2013-11-15 18:52:02.323+0000 INFO  [org.neo4j]: [trial_saMniDA(null))_0\neostore.relationshiptypestore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2013-11-15 18:52:02.324+0000 INFO  [org.neo4j]: [trial_saMniDA(null))_0\neostore.propertystore.db.strings] brickCount=0 brickSize=595584b mappedMem=595591168b (storeSize=128b)
+2013-11-15 18:52:02.325+0000 INFO  [org.neo4j]: [trial_saMniDA(null))_0\neostore.propertystore.db.index.keys] brickCount=0 brickSize=0b mappedMem=0b (storeSize=38b)
+2013-11-15 18:52:02.328+0000 INFO  [org.neo4j]: [trial_saMniDA(null))_0\neostore.propertystore.db.index] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2013-11-15 18:52:02.330+0000 INFO  [org.neo4j]: [trial_saMniDA(null))_0\neostore.propertystore.db.arrays] brickCount=0 brickSize=675200b mappedMem=675282944b (storeSize=128b)
+2013-11-15 18:52:02.335+0000 INFO  [org.neo4j]: [trial_saMniDA(null))_0\neostore.propertystore.db] brickCount=0 brickSize=7004481b mappedMem=700448768b (storeSize=0b)
+2013-11-15 18:52:02.338+0000 INFO  [org.neo4j]: [trial_saMniDA(null))_0\neostore.relationshipstore.db] brickCount=0 brickSize=8587821b mappedMem=858783744b (storeSize=0b)
+2013-11-15 18:52:02.339+0000 INFO  [org.neo4j]: [trial_saMniDA(null))_0\neostore.nodestore.db] brickCount=0 brickSize=193986b mappedMem=193986560b (storeSize=9b)
+2013-11-15 18:52:02.340+0000 INFO  [org.neo4j]: [trial_saMniDA(null))_0\neostore] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2013-11-15 18:52:02.346+0000 INFO  [org.neo4j]: trial_saMniDA(null))_0\neostore.relationshiptypestore.db.names hit=0 miss=0 switches=0 ooe=0
+2013-11-15 18:52:02.349+0000 INFO  [org.neo4j]: trial_saMniDA(null))_0\neostore.relationshiptypestore.db hit=0 miss=0 switches=0 ooe=0
+2013-11-15 18:52:02.351+0000 INFO  [org.neo4j]: trial_saMniDA(null))_0\neostore.propertystore.db.strings hit=0 miss=0 switches=0 ooe=0
+2013-11-15 18:52:02.353+0000 INFO  [org.neo4j]: trial_saMniDA(null))_0\neostore.propertystore.db.index.keys hit=0 miss=0 switches=0 ooe=0
+2013-11-15 18:52:02.355+0000 INFO  [org.neo4j]: trial_saMniDA(null))_0\neostore.propertystore.db.index hit=0 miss=0 switches=0 ooe=0
+2013-11-15 18:52:02.357+0000 INFO  [org.neo4j]: trial_saMniDA(null))_0\neostore.propertystore.db.arrays hit=0 miss=0 switches=0 ooe=0
+2013-11-15 18:52:02.369+0000 INFO  [org.neo4j]: trial_saMniDA(null))_0\neostore.propertystore.db hit=0 miss=0 switches=0 ooe=0
+2013-11-15 18:52:02.371+0000 INFO  [org.neo4j]: trial_saMniDA(null))_0\neostore.relationshipstore.db hit=0 miss=0 switches=0 ooe=0
+2013-11-15 18:52:02.373+0000 INFO  [org.neo4j]: trial_saMniDA(null))_0\neostore.nodestore.db hit=0 miss=0 switches=0 ooe=0
+2013-11-15 18:52:02.375+0000 INFO  [org.neo4j]: trial_saMniDA(null))_0\neostore hit=0 miss=8 switches=0 ooe=0
+2013-11-15 18:52:02.381+0000 INFO  [org.neo4j]: [trial_saMniDA(null))_0\neostore.relationshiptypestore.db.names] brickCount=0 brickSize=0b mappedMem=0b (storeSize=38b)
+2013-11-15 18:52:02.382+0000 INFO  [org.neo4j]: [trial_saMniDA(null))_0\neostore.relationshiptypestore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2013-11-15 18:52:02.383+0000 INFO  [org.neo4j]: [trial_saMniDA(null))_0\neostore.propertystore.db.strings] brickCount=0 brickSize=595584b mappedMem=595591168b (storeSize=128b)
+2013-11-15 18:52:02.384+0000 INFO  [org.neo4j]: [trial_saMniDA(null))_0\neostore.propertystore.db.index.keys] brickCount=0 brickSize=0b mappedMem=0b (storeSize=38b)
+2013-11-15 18:52:02.385+0000 INFO  [org.neo4j]: [trial_saMniDA(null))_0\neostore.propertystore.db.index] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2013-11-15 18:52:02.386+0000 INFO  [org.neo4j]: [trial_saMniDA(null))_0\neostore.propertystore.db.arrays] brickCount=0 brickSize=675200b mappedMem=675282944b (storeSize=128b)
+2013-11-15 18:52:02.387+0000 INFO  [org.neo4j]: [trial_saMniDA(null))_0\neostore.propertystore.db] brickCount=0 brickSize=7004481b mappedMem=700448768b (storeSize=0b)
+2013-11-15 18:52:02.388+0000 INFO  [org.neo4j]: [trial_saMniDA(null))_0\neostore.relationshipstore.db] brickCount=0 brickSize=8587821b mappedMem=858783744b (storeSize=0b)
+2013-11-15 18:52:02.389+0000 INFO  [org.neo4j]: [trial_saMniDA(null))_0\neostore.nodestore.db] brickCount=0 brickSize=193986b mappedMem=193986560b (storeSize=9b)
+2013-11-15 18:52:02.389+0000 INFO  [org.neo4j]: [trial_saMniDA(null))_0\neostore] brickCount=0 brickSize=0b mappedMem=0b (storeSize=54b)
+2013-11-15 18:52:02.417+0000 INFO  [org.neo4j]: Opened logical log [trial_saMniDA(null))_0\nioneo_logical.log.1] version=0, lastTxId=1 (clean)
+2013-11-15 18:52:02.426+0000 INFO  [org.neo4j]: TM new log: tm_tx_log.1
+2013-11-15 18:52:02.483+0000 INFO  [org.neo4j]: Opened logical log [trial_saMniDA(null))_0\index\lucene.log.1] version=0, lastTxId=1 (clean)
+2013-11-15 18:52:02.491+0000 INFO  [org.neo4j]: --- STARTED diagnostics for KernelDiagnostics:Versions START ---
+2013-11-15 18:52:02.491+0000 INFO  [org.neo4j]: Graph Database: org.neo4j.kernel.EmbeddedGraphDatabase StoreId[time:1384541522237, id:2498353555870278200, store version: 13561656364791302]
+2013-11-15 18:52:02.491+0000 INFO  [org.neo4j]: Kernel version: Neo4j - Graph Database Kernel 1.9.4
+2013-11-15 18:52:02.491+0000 INFO  [org.neo4j]: Neo4j component versions:
+2013-11-15 18:52:02.493+0000 INFO  [org.neo4j]:   Neo4j - Graph Database Kernel 1.9.4
+2013-11-15 18:52:02.493+0000 INFO  [org.neo4j]: --- STARTED diagnostics for KernelDiagnostics:Versions END ---
+2013-11-15 18:52:02.498+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_VERSIONS START ---
+2013-11-15 18:52:02.499+0000 INFO  [org.neo4j]: Store versions:
+    Store versions:
+      NeoStore v0.A.0
+      NodeStore v0.A.0
+      RelationshipStore v0.A.0
+      RelationshipTypeStore v0.A.0
+      PropertyStore v0.A.0
+      PropertyIndexStore v0.A.0
+      StringPropertyStore v0.A.0
+      ArrayPropertyStore v0.A.0
+2013-11-15 18:52:02.500+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_VERSIONS END ---
+2013-11-15 18:52:02.500+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_ID_USAGE START ---
+2013-11-15 18:52:02.500+0000 INFO  [org.neo4j]: Id usage:
+    Id usage:
+      NodeStore: used=1 high=0
+      RelationshipStore: used=0 high=-1
+      RelationshipTypeStore: used=0 high=-1
+      PropertyStore: used=0 high=-1
+      PropertyIndexStore: used=0 high=-1
+      StringPropertyStore: used=1 high=0
+      ArrayPropertyStore: used=1 high=0
+2013-11-15 18:52:02.501+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_ID_USAGE END ---
+2013-11-15 18:52:02.502+0000 INFO  [org.neo4j]: --- STARTED diagnostics for PERSISTENCE_WINDOW_POOL_STATS START ---
+2013-11-15 18:52:02.502+0000 INFO  [org.neo4j]: --- STARTED diagnostics for PERSISTENCE_WINDOW_POOL_STATS END ---
+2013-11-15 18:52:02.502+0000 INFO  [org.neo4j]: --- STARTED diagnostics for KernelDiagnostics:StoreFiles START ---
+2013-11-15 18:52:02.505+0000 INFO  [org.neo4j]: Disk space on partition (Total / Free / Free %): 536870907904 / 347434799104 / 64
+Storage files: (filename : modification date - size)
+      active_tx_log: 2013-11-16T00:22:02+0530 - 11.00 B
+      index:
+        lucene-store.db: 2013-11-16T00:22:02+0530 - 40.00 B
+        lucene.log.1: 2013-11-16T00:22:02+0530 - 16.00 B
+        lucene.log.active: 2013-11-16T00:22:02+0530 - 4.00 B
+      - Total: 2013-11-16T00:22:02+0530 - 60.00 B
+      lock: 2013-11-16T00:22:02+0530 - 0.00 B
+      messages.log: 2013-11-16T00:22:01+0530 - 18.23 kB
+      neostore: 2013-11-16T00:22:02+0530 - 54.00 B
+      neostore.id: 2013-11-16T00:22:02+0530 - 9.00 B
+      neostore.nodestore.db: 2013-11-16T00:22:02+0530 - 9.00 B
+      neostore.nodestore.db.id: 2013-11-16T00:22:02+0530 - 9.00 B
+      neostore.propertystore.db: 2013-11-16T00:22:02+0530 - 0.00 B
+      neostore.propertystore.db.arrays: 2013-11-16T00:22:02+0530 - 128.00 B
+      neostore.propertystore.db.arrays.id: 2013-11-16T00:22:02+0530 - 9.00 B
+      neostore.propertystore.db.id: 2013-11-16T00:22:02+0530 - 9.00 B
+      neostore.propertystore.db.index: 2013-11-16T00:22:02+0530 - 0.00 B
+      neostore.propertystore.db.index.id: 2013-11-16T00:22:02+0530 - 9.00 B
+      neostore.propertystore.db.index.keys: 2013-11-16T00:22:02+0530 - 38.00 B
+      neostore.propertystore.db.index.keys.id: 2013-11-16T00:22:02+0530 - 9.00 B
+      neostore.propertystore.db.strings: 2013-11-16T00:22:02+0530 - 128.00 B
+      neostore.propertystore.db.strings.id: 2013-11-16T00:22:02+0530 - 9.00 B
+      neostore.relationshipstore.db: 2013-11-16T00:22:02+0530 - 0.00 B
+      neostore.relationshipstore.db.id: 2013-11-16T00:22:02+0530 - 9.00 B
+      neostore.relationshiptypestore.db: 2013-11-16T00:22:02+0530 - 0.00 B
+      neostore.relationshiptypestore.db.id: 2013-11-16T00:22:02+0530 - 9.00 B
+      neostore.relationshiptypestore.db.names: 2013-11-16T00:22:02+0530 - 38.00 B
+      neostore.relationshiptypestore.db.names.id: 2013-11-16T00:22:02+0530 - 9.00 B
+      nioneo_logical.log.1: 2013-11-16T00:22:02+0530 - 16.00 B
+      nioneo_logical.log.active: 2013-11-16T00:22:02+0530 - 4.00 B
+      store_lock: 2013-11-16T00:22:02+0530 - 0.00 B
+      tm_tx_log.1: 2013-11-16T00:22:02+0530 - 0.00 B
+2013-11-15 18:52:02.522+0000 INFO  [org.neo4j]: --- STARTED diagnostics for KernelDiagnostics:StoreFiles END ---
+2013-11-15 18:52:02.527+0000 INFO  [org.neo4j]: Started - database is now available
+2013-11-15 18:52:02.593+0000 INFO  [org.neo4j]: GC Monitor started. 
+2013-11-15 19:05:39.112+0000 INFO  [org.neo4j]: Rotating [trial_saMniDA(null))_0\nioneo_logical.log.1] @ version=0 to trial_saMniDA(null))_0\nioneo_logical.log.2 from position 26214438
+2013-11-15 19:05:39.115+0000 INFO  [org.neo4j]: Rotate log first start entry @ pos=26214103 out of [55664=Start[55664,xid=GlobalId[NEOKERNL|6697430890687198757|55663], BranchId[ 52 49 52 49 52 49 ],master=-1,me=-1,time=2013-11-15 19:05:39.071+0000/1384542339071]]
+2013-11-15 19:05:39.121+0000 INFO  [org.neo4j]: Rotate: old log scanned, newLog @ pos=351
+2013-11-15 19:05:39.125+0000 INFO  [org.neo4j]: Log rotated, newLog @ pos=351, version 1 and last tx 55663
+2013-11-15 19:12:54.528+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 800ms [total block time: 0.8s]
+2013-11-15 19:16:23.005+0000 INFO  [org.neo4j]: Shutdown started
+2013-11-15 19:16:23.006+0000 INFO  [org.neo4j]: Stopping - database is now unavailable
+2013-11-15 19:16:23.007+0000 INFO  [org.neo4j]: GC Monitor stopped. 
+2013-11-15 19:16:23.046+0000 INFO  [org.neo4j]: Closed log trial_saMniDA(null))_0\index\lucene.log
+2013-11-15 19:16:23.182+0000 INFO  [org.neo4j]: TM shutting down
+2013-11-15 19:16:23.246+0000 INFO  [org.neo4j]: Closed log trial_saMniDA(null))_0\nioneo_logical.log
+2013-11-15 19:16:23.248+0000 INFO  [org.neo4j]: trial_saMniDA(null))_0\neostore.relationshiptypestore.db.names hit=0 miss=1 switches=0 ooe=0
+2013-11-15 19:16:23.251+0000 INFO  [org.neo4j]: trial_saMniDA(null))_0\neostore.relationshiptypestore.db hit=0 miss=1 switches=0 ooe=0
+2013-11-15 19:16:23.261+0000 INFO  [org.neo4j]: trial_saMniDA(null))_0\neostore.propertystore.db.strings hit=224 miss=0 switches=0 ooe=0
+2013-11-15 19:16:23.264+0000 INFO  [org.neo4j]: trial_saMniDA(null))_0\neostore.propertystore.db.index.keys hit=0 miss=3 switches=0 ooe=0
+2013-11-15 19:16:23.267+0000 INFO  [org.neo4j]: trial_saMniDA(null))_0\neostore.propertystore.db.index hit=0 miss=3 switches=0 ooe=0
+2013-11-15 19:16:23.270+0000 INFO  [org.neo4j]: trial_saMniDA(null))_0\neostore.propertystore.db.arrays hit=0 miss=0 switches=0 ooe=0
+2013-11-15 19:16:23.272+0000 INFO  [org.neo4j]: trial_saMniDA(null))_0\neostore.propertystore.db hit=225446 miss=0 switches=0 ooe=0
+2013-11-15 19:16:23.276+0000 INFO  [org.neo4j]: trial_saMniDA(null))_0\neostore.relationshipstore.db hit=292978 miss=0 switches=0 ooe=0
+2013-11-15 19:16:23.278+0000 INFO  [org.neo4j]: trial_saMniDA(null))_0\neostore.nodestore.db hit=312637 miss=0 switches=0 ooe=0
+2013-11-15 19:16:23.281+0000 INFO  [org.neo4j]: trial_saMniDA(null))_0\neostore hit=0 miss=97682 switches=0 ooe=0
+2013-11-15 19:16:23.283+0000 INFO  [org.neo4j]: NeoStore closed
+2013-11-15 19:16:23.283+0000 INFO  [org.neo4j]: --- STOPPING diagnostics START ---
+2013-11-15 19:16:23.283+0000 INFO  [org.neo4j]: --- STOPPING diagnostics END ---
