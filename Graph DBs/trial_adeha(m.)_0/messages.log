@@ -1,0 +1,1166 @@
+2013-11-15 18:46:01.869+0000 INFO  [org.neo4j]: --- INITIALIZED diagnostics START ---
+2013-11-15 18:46:01.885+0000 INFO  [org.neo4j]: Neo4j Kernel properties:
+    neostore.propertystore.db.mapped_memory=668M
+    neostore.nodestore.db.mapped_memory=185M
+    neostore.relationshipstore.db.mapped_memory=819M
+    neostore.propertystore.db.strings.mapped_memory=568M
+    store_dir=trial_adeha(m.)_0
+    neostore.propertystore.db.arrays.mapped_memory=644M
+    ephemeral=false
+2013-11-15 18:46:01.891+0000 INFO  [org.neo4j]: Diagnostics providers:
+    org.neo4j.kernel.configuration.Config
+    org.neo4j.kernel.info.DiagnosticsManager
+    SYSTEM_MEMORY
+    JAVA_MEMORY
+    OPERATING_SYSTEM
+    JAVA_VIRTUAL_MACHINE
+    CLASSPATH
+    LIBRARY_PATH
+    SYSTEM_PROPERTIES
+    NETWORK
+2013-11-15 18:46:01.892+0000 INFO  [org.neo4j]: System memory information:
+    Total Physical memory: 47.99 GB
+    Free Physical memory: 44.34 GB
+    Committed virtual memory: 1.34 GB
+    Total swap space: 95.97 GB
+    Free swap space: 90.12 GB
+2013-11-15 18:46:01.897+0000 INFO  [org.neo4j]: JVM memory information:
+    Free  memory: 554.94 MB
+    Total memory: 735.88 MB
+    Max   memory: 10.66 GB
+    Garbage Collector: PS Scavenge: [PS Eden Space, PS Survivor Space]
+    Garbage Collector: PS MarkSweep: [PS Eden Space, PS Survivor Space, PS Old Gen, PS Perm Gen]
+    Memory Pool: Code Cache (Non-heap memory): committed=2.44 MB, used=606.31 kB, max=48.00 MB, threshold=0.00 B
+    Memory Pool: PS Eden Space (Heap memory): committed=192.06 MB, used=180.93 MB, max=3.94 GB, threshold=?
+    Memory Pool: PS Survivor Space (Heap memory): committed=31.94 MB, used=0.00 B, max=31.94 MB, threshold=?
+    Memory Pool: PS Old Gen (Heap memory): committed=511.88 MB, used=0.00 B, max=8.00 GB, threshold=0.00 B
+    Memory Pool: PS Perm Gen (Non-heap memory): committed=20.75 MB, used=6.27 MB, max=82.00 MB, threshold=0.00 B
+2013-11-15 18:46:01.902+0000 INFO  [org.neo4j]: Operating system information:
+    Operating System: Windows Server 2008 R2; version: 6.1; arch: amd64; cpus: 24
+    Process id: 6544@WIN-H9I0VFVUB37
+    Byte order: LITTLE_ENDIAN
+    Local timezone: Asia/Calcutta
+2013-11-15 18:46:01.917+0000 INFO  [org.neo4j]: JVM information:
+    VM Name: Java HotSpot(TM) 64-Bit Server VM
+    VM Vendor: Oracle Corporation
+    VM Version: 23.6-b04
+    JIT compiler: HotSpot 64-Bit Tiered Compilers
+    VM Arguments: [-Dfile.encoding=Cp1252]
+2013-11-15 18:46:01.918+0000 INFO  [org.neo4j]: Java classpath:
+     [bootstrap] C:\Program Files\Java\jre7\lib\resources.jar
+     [loader.1] file:/C:/Program%20Files/Java/jre7/lib/ext/zipfs.jar
+     [classpath + loader.0] file:/C:/Users/Puneet/NLProject/nlp-master/bin/
+     [classpath + loader.0] file:/C:/Users/Puneet/Workspace/neo4j-community-1.9.4/lib/scala-library-2.10.0.jar
+     [bootstrap] C:\Program Files\Java\jre7\classes
+     [classpath + loader.0] file:/C:/Users/Puneet/Workspace/neo4j-community-1.9.4/lib/server-api-1.9.4.jar
+     [loader.1] file:/C:/Program%20Files/Java/jre7/lib/ext/jaccess.jar
+     [bootstrap] C:\Program Files\Java\jre7\lib\jfr.jar
+     [bootstrap] C:\Program Files\Java\jre7\lib\jsse.jar
+     [loader.1] file:/C:/Program%20Files/Java/jre7/lib/ext/sunmscapi.jar
+     [classpath + loader.0] file:/C:/Users/Puneet/Workspace/neo4j-community-1.9.4/lib/geronimo-jta_1.1_spec-1.1.1.jar
+     [classpath + loader.0] file:/C:/Users/Puneet/Workspace/neo4j-community-1.9.4/lib/neo4j-graph-algo-1.9.4.jar
+     [bootstrap] C:\Program Files\Java\jre7\lib\rt.jar
+     [classpath + loader.0] file:/C:/Users/Puneet/Workspace/neo4j-community-1.9.4/lib/lucene-core-3.6.2.jar
+     [loader.1] file:/C:/Program%20Files/Java/jre7/lib/ext/access-bridge-64.jar
+     [classpath + loader.0] file:/C:/Users/Puneet/Workspace/neo4j-community-1.9.4/lib/concurrentlinkedhashmap-lru-1.3.1.jar
+     [bootstrap] C:\Program Files\Java\jre7\lib\charsets.jar
+     [classpath + loader.0] file:/C:/Users/Puneet/Workspace/neo4j-community-1.9.4/lib/neo4j-cypher-1.9.4.jar
+     [classpath + loader.0] file:/C:/Users/Puneet/Workspace/neo4j-community-1.9.4/lib/neo4j-jmx-1.9.4.jar
+     [loader.1] file:/C:/Program%20Files/Java/jre7/lib/ext/localedata.jar
+     [loader.1] file:/C:/Program%20Files/Java/jre7/lib/ext/sunjce_provider.jar
+     [classpath + loader.0] file:/C:/Users/Puneet/Workspace/neo4j-community-1.9.4/lib/neo4j-udc-1.9.4.jar
+     [classpath + loader.0] file:/C:/Users/Puneet/Workspace/neo4j-community-1.9.4/lib/neo4j-lucene-index-1.9.4.jar
+     [bootstrap] C:\Program Files\Java\jre7\lib\jce.jar
+     [bootstrap] C:\Program Files\Java\jre7\lib\sunrsasign.jar
+     [classpath + loader.0] file:/C:/Users/Puneet/Workspace/neo4j-community-1.9.4/lib/org.apache.servicemix.bundles.jline-0.9.94_1.jar
+     [classpath + loader.0] file:/C:/Users/Puneet/Workspace/neo4j-community-1.9.4/lib/neo4j-shell-1.9.4.jar
+     [loader.1] file:/C:/Program%20Files/Java/jre7/lib/ext/dnsns.jar
+     [classpath + loader.0] file:/C:/Users/Puneet/Workspace/neo4j-community-1.9.4/lib/neo4j-graph-matching-1.9.4.jar
+     [loader.1] file:/C:/Program%20Files/Java/jre7/lib/ext/sunec.jar
+     [classpath + loader.0] file:/C:/Users/Puneet/Workspace/neo4j-community-1.9.4/lib/neo4j-kernel-1.9.4.jar
+2013-11-15 18:46:01.921+0000 INFO  [org.neo4j]: Library path:
+    C:\Program Files\Java\jre7\bin
+    C:\Windows\Sun\Java\bin
+    C:\Windows\System32
+    C:\Windows
+    C:\gurobi510\win64\bin
+    C:\Windows\System32
+    C:\Windows
+    C:\Windows\System32\wbem
+    C:\Windows\System32\WindowsPowerShell\v1.0
+    C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn
+    C:\Program Files\Microsoft SQL Server\100\Tools\Binn
+    C:\Program Files\Microsoft SQL Server\100\DTS\Binn
+    C:\ILOG\CPLEX110\lib
+    C:\Program Files\Microsoft SQL Server\110\Tools\Binn
+    C:\Program Files\MATLAB\R2013a\bin
+    C:\Users\Puneet\NLProject\nlp-master
+2013-11-15 18:46:01.927+0000 INFO  [org.neo4j]: System.properties:
+    sun.boot.library.path = C:\Program Files\Java\jre7\bin
+    path.separator = ;
+    file.encoding.pkg = sun.io
+    user.country = US
+    user.script = 
+    sun.java.launcher = SUN_STANDARD
+    sun.os.patch.level = Service Pack 1
+    user.dir = C:\Users\Puneet\NLProject\nlp-master
+    user.variant = 
+    sun.jnu.encoding = Cp1252
+    sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+    user.home = C:\Users\Puneet
+    user.timezone = Asia/Calcutta
+    file.encoding = Cp1252
+    user.name = Puneet
+    sun.java.command = semantics.Main
+    sun.arch.data.model = 64
+    user.language = en
+    awt.toolkit = sun.awt.windows.WToolkit
+    file.separator = \
+    sun.io.unicode.encoding = UnicodeLittle
+    sun.cpu.endian = little
+    sun.desktop = windows
+    sun.cpu.isalist = amd64
+2013-11-15 18:46:01.928+0000 INFO  [org.neo4j]: Network information:
+    Interface Software Loopback Interface 1:
+        address: 127.0.0.1
+        address: 0:0:0:0:0:0:0:1
+    Interface WAN Miniport (SSTP):
+    Interface WAN Miniport (L2TP):
+    Interface WAN Miniport (PPTP):
+    Interface WAN Miniport (PPPOE):
+    Interface WAN Miniport (IPv6):
+    Interface WAN Miniport (Network Monitor):
+    Interface WAN Miniport (IP):
+    Interface RAS Async Adapter:
+    Interface WAN Miniport (IKEv2):
+    Interface Broadcom BCM5709C NetXtreme II GigE (NDIS VBD Client):
+        address: fe80:0:0:0:d024:95f8:c3cc:18b8%11
+    Interface Broadcom BCM5709C NetXtreme II GigE (NDIS VBD Client) #2:
+        address: 192.168.69.55
+        address: fe80:0:0:0:4868:546c:ccfb:c09f%12
+    Interface Microsoft ISATAP Adapter #2:
+    Interface Broadcom BCM5709C NetXtreme II GigE (NDIS VBD Client) #3:
+        address: fe80:0:0:0:f9b4:c1b8:32d2:2fb8%14
+    Interface Microsoft ISATAP Adapter #3:
+    Interface Broadcom BCM5709C NetXtreme II GigE (NDIS VBD Client) #4:
+        address: fe80:0:0:0:141e:48b4:bac0:ab26%16
+    Interface Microsoft ISATAP Adapter #4:
+    Interface Teredo Tunneling Pseudo-Interface:
+        address: fe80:0:0:0:0:100:7f:fffe%18
+    Interface Microsoft 6to4 Adapter:
+    Interface Broadcom BCM5709C NetXtreme II GigE (NDIS VBD Client) - VirtualBox Bridged Networking Driver Miniport:
+    Interface Broadcom BCM5709C NetXtreme II GigE (NDIS VBD Client) #2 - VirtualBox Bridged Networking Driver Miniport:
+    Interface Broadcom BCM5709C NetXtreme II GigE (NDIS VBD Client) #3 - VirtualBox Bridged Networking Driver Miniport:
+    Interface Broadcom BCM5709C NetXtreme II GigE (NDIS VBD Client) #4 - VirtualBox Bridged Networking Driver Miniport:
+    Interface VirtualBox Host-Only Ethernet Adapter:
+        address: 192.168.56.1
+        address: fe80:0:0:0:f40f:edac:9475:3602%24
+    Interface Microsoft ISATAP Adapter #5:
+        address: fe80:0:0:0:0:5efe:c0a8:3801%25
+    Interface Microsoft ISATAP Adapter:
+        address: fe80:0:0:0:0:5efe:c0a8:4537%26
+    Interface VMware Virtual Ethernet Adapter for VMnet1:
+        address: 172.16.233.1
+        address: fe80:0:0:0:5932:6403:2c0b:257b%27
+    Interface Microsoft ISATAP Adapter #6:
+        address: fe80:0:0:0:0:5efe:ac10:e901%28
+    Interface VMware Virtual Ethernet Adapter for VMnet8:
+        address: 172.16.139.1
+        address: fe80:0:0:0:d082:7cd1:c915:514f%29
+    Interface Microsoft ISATAP Adapter #7:
+        address: fe80:0:0:0:0:5efe:ac10:8b01%30
+    Interface WAN Miniport (Network Monitor)-QoS Packet Scheduler-0000:
+    Interface WAN Miniport (IP)-QoS Packet Scheduler-0000:
+    Interface WAN Miniport (IPv6)-QoS Packet Scheduler-0000:
+    Interface VirtualBox Host-Only Ethernet Adapter-QoS Packet Scheduler-0000:
+    Interface VirtualBox Host-Only Ethernet Adapter-WFP LightWeight Filter-0000:
+    Interface Broadcom BCM5709C NetXtreme II GigE (NDIS VBD Client) #2 - VirtualBox Bridged Networking Driver Miniport-QoS Packet Scheduler-0000:
+    Interface Broadcom BCM5709C NetXtreme II GigE (NDIS VBD Client) #2 - VirtualBox Bridged Networking Driver Miniport-WFP LightWeight Filter-0000:
+    Interface Broadcom BCM5709C NetXtreme II GigE (NDIS VBD Client) #3 - VirtualBox Bridged Networking Driver Miniport-QoS Packet Scheduler-0000:
+    Interface Broadcom BCM5709C NetXtreme II GigE (NDIS VBD Client) #3 - VirtualBox Bridged Networking Driver Miniport-WFP LightWeight Filter-0000:
+    Interface Broadcom BCM5709C NetXtreme II GigE (NDIS VBD Client) #4 - VirtualBox Bridged Networking Driver Miniport-QoS Packet Scheduler-0000:
+    Interface Broadcom BCM5709C NetXtreme II GigE (NDIS VBD Client) #4 - VirtualBox Bridged Networking Driver Miniport-WFP LightWeight Filter-0000:
+    Interface Broadcom BCM5709C NetXtreme II GigE (NDIS VBD Client) - VirtualBox Bridged Networking Driver Miniport-QoS Packet Scheduler-0000:
+    Interface Broadcom BCM5709C NetXtreme II GigE (NDIS VBD Client) - VirtualBox Bridged Networking Driver Miniport-WFP LightWeight Filter-0000:
+2013-11-15 18:46:02.474+0000 INFO  [org.neo4j]: --- INITIALIZED diagnostics END ---
+2013-11-15 18:46:02.651+0000 INFO  [org.neo4j]: Creating new db @ trial_adeha(m.)_0\neostore
+2013-11-15 18:46:02.686+0000 INFO  [org.neo4j]: [trial_adeha(m.)_0\neostore.nodestore.db] brickCount=0 brickSize=1939860b mappedMem=193986560b (storeSize=0b)
+2013-11-15 18:46:02.697+0000 INFO  [org.neo4j]: trial_adeha(m.)_0\neostore.nodestore.db hit=1 miss=0 switches=0 ooe=0
+2013-11-15 18:46:02.742+0000 INFO  [org.neo4j]: [trial_adeha(m.)_0\neostore.relationshiptypestore.db.names] brickCount=0 brickSize=0b mappedMem=0b (storeSize=38b)
+2013-11-15 18:46:02.748+0000 INFO  [org.neo4j]: [trial_adeha(m.)_0\neostore.relationshiptypestore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2013-11-15 18:46:02.748+0000 INFO  [org.neo4j]: trial_adeha(m.)_0\neostore.relationshiptypestore.db.names hit=0 miss=0 switches=0 ooe=0
+2013-11-15 18:46:02.750+0000 INFO  [org.neo4j]: trial_adeha(m.)_0\neostore.relationshiptypestore.db hit=0 miss=0 switches=0 ooe=0
+2013-11-15 18:46:02.753+0000 INFO  [org.neo4j]: [trial_adeha(m.)_0\neostore.relationshiptypestore.db.names] brickCount=0 brickSize=0b mappedMem=0b (storeSize=38b)
+2013-11-15 18:46:02.754+0000 INFO  [org.neo4j]: [trial_adeha(m.)_0\neostore.relationshiptypestore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2013-11-15 18:46:02.755+0000 INFO  [org.neo4j]: [trial_adeha(m.)_0\neostore.propertystore.db.strings] brickCount=0 brickSize=595584b mappedMem=595591168b (storeSize=128b)
+2013-11-15 18:46:02.756+0000 INFO  [org.neo4j]: [trial_adeha(m.)_0\neostore.propertystore.db.index.keys] brickCount=0 brickSize=0b mappedMem=0b (storeSize=38b)
+2013-11-15 18:46:02.759+0000 INFO  [org.neo4j]: [trial_adeha(m.)_0\neostore.propertystore.db.index] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2013-11-15 18:46:02.761+0000 INFO  [org.neo4j]: [trial_adeha(m.)_0\neostore.propertystore.db.arrays] brickCount=0 brickSize=675200b mappedMem=675282944b (storeSize=128b)
+2013-11-15 18:46:02.767+0000 INFO  [org.neo4j]: [trial_adeha(m.)_0\neostore.propertystore.db] brickCount=0 brickSize=7004481b mappedMem=700448768b (storeSize=0b)
+2013-11-15 18:46:02.771+0000 INFO  [org.neo4j]: [trial_adeha(m.)_0\neostore.relationshipstore.db] brickCount=0 brickSize=8587821b mappedMem=858783744b (storeSize=0b)
+2013-11-15 18:46:02.772+0000 INFO  [org.neo4j]: [trial_adeha(m.)_0\neostore.nodestore.db] brickCount=0 brickSize=193986b mappedMem=193986560b (storeSize=9b)
+2013-11-15 18:46:02.774+0000 INFO  [org.neo4j]: [trial_adeha(m.)_0\neostore] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2013-11-15 18:46:02.781+0000 INFO  [org.neo4j]: trial_adeha(m.)_0\neostore.relationshiptypestore.db.names hit=0 miss=0 switches=0 ooe=0
+2013-11-15 18:46:02.784+0000 INFO  [org.neo4j]: trial_adeha(m.)_0\neostore.relationshiptypestore.db hit=0 miss=0 switches=0 ooe=0
+2013-11-15 18:46:02.787+0000 INFO  [org.neo4j]: trial_adeha(m.)_0\neostore.propertystore.db.strings hit=0 miss=0 switches=0 ooe=0
+2013-11-15 18:46:02.790+0000 INFO  [org.neo4j]: trial_adeha(m.)_0\neostore.propertystore.db.index.keys hit=0 miss=0 switches=0 ooe=0
+2013-11-15 18:46:02.792+0000 INFO  [org.neo4j]: trial_adeha(m.)_0\neostore.propertystore.db.index hit=0 miss=0 switches=0 ooe=0
+2013-11-15 18:46:02.794+0000 INFO  [org.neo4j]: trial_adeha(m.)_0\neostore.propertystore.db.arrays hit=0 miss=0 switches=0 ooe=0
+2013-11-15 18:46:02.798+0000 INFO  [org.neo4j]: trial_adeha(m.)_0\neostore.propertystore.db hit=0 miss=0 switches=0 ooe=0
+2013-11-15 18:46:02.801+0000 INFO  [org.neo4j]: trial_adeha(m.)_0\neostore.relationshipstore.db hit=0 miss=0 switches=0 ooe=0
+2013-11-15 18:46:02.803+0000 INFO  [org.neo4j]: trial_adeha(m.)_0\neostore.nodestore.db hit=0 miss=0 switches=0 ooe=0
+2013-11-15 18:46:02.806+0000 INFO  [org.neo4j]: trial_adeha(m.)_0\neostore hit=0 miss=8 switches=0 ooe=0
+2013-11-15 18:46:02.812+0000 INFO  [org.neo4j]: [trial_adeha(m.)_0\neostore.relationshiptypestore.db.names] brickCount=0 brickSize=0b mappedMem=0b (storeSize=38b)
+2013-11-15 18:46:02.812+0000 INFO  [org.neo4j]: [trial_adeha(m.)_0\neostore.relationshiptypestore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2013-11-15 18:46:02.814+0000 INFO  [org.neo4j]: [trial_adeha(m.)_0\neostore.propertystore.db.strings] brickCount=0 brickSize=595584b mappedMem=595591168b (storeSize=128b)
+2013-11-15 18:46:02.815+0000 INFO  [org.neo4j]: [trial_adeha(m.)_0\neostore.propertystore.db.index.keys] brickCount=0 brickSize=0b mappedMem=0b (storeSize=38b)
+2013-11-15 18:46:02.816+0000 INFO  [org.neo4j]: [trial_adeha(m.)_0\neostore.propertystore.db.index] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2013-11-15 18:46:02.817+0000 INFO  [org.neo4j]: [trial_adeha(m.)_0\neostore.propertystore.db.arrays] brickCount=0 brickSize=675200b mappedMem=675282944b (storeSize=128b)
+2013-11-15 18:46:02.818+0000 INFO  [org.neo4j]: [trial_adeha(m.)_0\neostore.propertystore.db] brickCount=0 brickSize=7004481b mappedMem=700448768b (storeSize=0b)
+2013-11-15 18:46:02.819+0000 INFO  [org.neo4j]: [trial_adeha(m.)_0\neostore.relationshipstore.db] brickCount=0 brickSize=8587821b mappedMem=858783744b (storeSize=0b)
+2013-11-15 18:46:02.820+0000 INFO  [org.neo4j]: [trial_adeha(m.)_0\neostore.nodestore.db] brickCount=0 brickSize=193986b mappedMem=193986560b (storeSize=9b)
+2013-11-15 18:46:02.822+0000 INFO  [org.neo4j]: [trial_adeha(m.)_0\neostore] brickCount=0 brickSize=0b mappedMem=0b (storeSize=54b)
+2013-11-15 18:46:02.848+0000 INFO  [org.neo4j]: Opened logical log [trial_adeha(m.)_0\nioneo_logical.log.1] version=0, lastTxId=1 (clean)
+2013-11-15 18:46:02.856+0000 INFO  [org.neo4j]: TM new log: tm_tx_log.1
+2013-11-15 18:46:02.911+0000 INFO  [org.neo4j]: Opened logical log [trial_adeha(m.)_0\index\lucene.log.1] version=0, lastTxId=1 (clean)
+2013-11-15 18:46:02.919+0000 INFO  [org.neo4j]: --- STARTED diagnostics for KernelDiagnostics:Versions START ---
+2013-11-15 18:46:02.919+0000 INFO  [org.neo4j]: Graph Database: org.neo4j.kernel.EmbeddedGraphDatabase StoreId[time:1384541162653, id:-2927343580907942488, store version: 13561656364791302]
+2013-11-15 18:46:02.920+0000 INFO  [org.neo4j]: Kernel version: Neo4j - Graph Database Kernel 1.9.4
+2013-11-15 18:46:02.920+0000 INFO  [org.neo4j]: Neo4j component versions:
+2013-11-15 18:46:02.921+0000 INFO  [org.neo4j]:   Neo4j - Graph Database Kernel 1.9.4
+2013-11-15 18:46:02.921+0000 INFO  [org.neo4j]: --- STARTED diagnostics for KernelDiagnostics:Versions END ---
+2013-11-15 18:46:02.926+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_VERSIONS START ---
+2013-11-15 18:46:02.927+0000 INFO  [org.neo4j]: Store versions:
+    Store versions:
+      NeoStore v0.A.0
+      NodeStore v0.A.0
+      RelationshipStore v0.A.0
+      RelationshipTypeStore v0.A.0
+      PropertyStore v0.A.0
+      PropertyIndexStore v0.A.0
+      StringPropertyStore v0.A.0
+      ArrayPropertyStore v0.A.0
+2013-11-15 18:46:02.927+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_VERSIONS END ---
+2013-11-15 18:46:02.927+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_ID_USAGE START ---
+2013-11-15 18:46:02.928+0000 INFO  [org.neo4j]: Id usage:
+    Id usage:
+      NodeStore: used=1 high=0
+      RelationshipStore: used=0 high=-1
+      RelationshipTypeStore: used=0 high=-1
+      PropertyStore: used=0 high=-1
+      PropertyIndexStore: used=0 high=-1
+      StringPropertyStore: used=1 high=0
+      ArrayPropertyStore: used=1 high=0
+2013-11-15 18:46:02.929+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_ID_USAGE END ---
+2013-11-15 18:46:02.929+0000 INFO  [org.neo4j]: --- STARTED diagnostics for PERSISTENCE_WINDOW_POOL_STATS START ---
+2013-11-15 18:46:02.929+0000 INFO  [org.neo4j]: --- STARTED diagnostics for PERSISTENCE_WINDOW_POOL_STATS END ---
+2013-11-15 18:46:02.930+0000 INFO  [org.neo4j]: --- STARTED diagnostics for KernelDiagnostics:StoreFiles START ---
+2013-11-15 18:46:02.933+0000 INFO  [org.neo4j]: Disk space on partition (Total / Free / Free %): 536870907904 / 347766059008 / 64
+Storage files: (filename : modification date - size)
+      active_tx_log: 2013-11-16T00:16:02+0530 - 11.00 B
+      index:
+        lucene-store.db: 2013-11-16T00:16:02+0530 - 40.00 B
+        lucene.log.1: 2013-11-16T00:16:02+0530 - 16.00 B
+        lucene.log.active: 2013-11-16T00:16:02+0530 - 4.00 B
+      - Total: 2013-11-16T00:16:02+0530 - 60.00 B
+      lock: 2013-11-16T00:16:02+0530 - 0.00 B
+      messages.log: 2013-11-16T00:16:01+0530 - 18.04 kB
+      neostore: 2013-11-16T00:16:02+0530 - 54.00 B
+      neostore.id: 2013-11-16T00:16:02+0530 - 9.00 B
+      neostore.nodestore.db: 2013-11-16T00:16:02+0530 - 9.00 B
+      neostore.nodestore.db.id: 2013-11-16T00:16:02+0530 - 9.00 B
+      neostore.propertystore.db: 2013-11-16T00:16:02+0530 - 0.00 B
+      neostore.propertystore.db.arrays: 2013-11-16T00:16:02+0530 - 128.00 B
+      neostore.propertystore.db.arrays.id: 2013-11-16T00:16:02+0530 - 9.00 B
+      neostore.propertystore.db.id: 2013-11-16T00:16:02+0530 - 9.00 B
+      neostore.propertystore.db.index: 2013-11-16T00:16:02+0530 - 0.00 B
+      neostore.propertystore.db.index.id: 2013-11-16T00:16:02+0530 - 9.00 B
+      neostore.propertystore.db.index.keys: 2013-11-16T00:16:02+0530 - 38.00 B
+      neostore.propertystore.db.index.keys.id: 2013-11-16T00:16:02+0530 - 9.00 B
+      neostore.propertystore.db.strings: 2013-11-16T00:16:02+0530 - 128.00 B
+      neostore.propertystore.db.strings.id: 2013-11-16T00:16:02+0530 - 9.00 B
+      neostore.relationshipstore.db: 2013-11-16T00:16:02+0530 - 0.00 B
+      neostore.relationshipstore.db.id: 2013-11-16T00:16:02+0530 - 9.00 B
+      neostore.relationshiptypestore.db: 2013-11-16T00:16:02+0530 - 0.00 B
+      neostore.relationshiptypestore.db.id: 2013-11-16T00:16:02+0530 - 9.00 B
+      neostore.relationshiptypestore.db.names: 2013-11-16T00:16:02+0530 - 38.00 B
+      neostore.relationshiptypestore.db.names.id: 2013-11-16T00:16:02+0530 - 9.00 B
+      nioneo_logical.log.1: 2013-11-16T00:16:02+0530 - 16.00 B
+      nioneo_logical.log.active: 2013-11-16T00:16:02+0530 - 4.00 B
+      store_lock: 2013-11-16T00:16:02+0530 - 0.00 B
+      tm_tx_log.1: 2013-11-16T00:16:02+0530 - 0.00 B
+2013-11-15 18:46:02.951+0000 INFO  [org.neo4j]: --- STARTED diagnostics for KernelDiagnostics:StoreFiles END ---
+2013-11-15 18:46:02.955+0000 INFO  [org.neo4j]: Started - database is now available
+2013-11-15 18:46:03.016+0000 INFO  [org.neo4j]: GC Monitor started. 
+2013-11-15 18:46:20.188+0000 INFO  [org.neo4j]: Shutdown started
+2013-11-15 18:46:20.190+0000 INFO  [org.neo4j]: Stopping - database is now unavailable
+2013-11-15 18:46:20.190+0000 INFO  [org.neo4j]: GC Monitor stopped. 
+2013-11-15 18:46:20.260+0000 INFO  [org.neo4j]: Closed log trial_adeha(m.)_0\index\lucene.log
+2013-11-15 18:46:20.269+0000 INFO  [org.neo4j]: TM shutting down
+2013-11-15 18:46:20.315+0000 INFO  [org.neo4j]: Closed log trial_adeha(m.)_0\nioneo_logical.log
+2013-11-15 18:46:20.316+0000 INFO  [org.neo4j]: trial_adeha(m.)_0\neostore.relationshiptypestore.db.names hit=0 miss=1 switches=0 ooe=0
+2013-11-15 18:46:20.319+0000 INFO  [org.neo4j]: trial_adeha(m.)_0\neostore.relationshiptypestore.db hit=0 miss=1 switches=0 ooe=0
+2013-11-15 18:46:20.322+0000 INFO  [org.neo4j]: trial_adeha(m.)_0\neostore.propertystore.db.strings hit=2 miss=0 switches=0 ooe=0
+2013-11-15 18:46:20.324+0000 INFO  [org.neo4j]: trial_adeha(m.)_0\neostore.propertystore.db.index.keys hit=0 miss=3 switches=0 ooe=0
+2013-11-15 18:46:20.326+0000 INFO  [org.neo4j]: trial_adeha(m.)_0\neostore.propertystore.db.index hit=0 miss=3 switches=0 ooe=0
+2013-11-15 18:46:20.328+0000 INFO  [org.neo4j]: trial_adeha(m.)_0\neostore.propertystore.db.arrays hit=0 miss=0 switches=0 ooe=0
+2013-11-15 18:46:20.330+0000 INFO  [org.neo4j]: trial_adeha(m.)_0\neostore.propertystore.db hit=1704 miss=0 switches=0 ooe=0
+2013-11-15 18:46:20.333+0000 INFO  [org.neo4j]: trial_adeha(m.)_0\neostore.relationshipstore.db hit=2035 miss=0 switches=0 ooe=0
+2013-11-15 18:46:20.336+0000 INFO  [org.neo4j]: trial_adeha(m.)_0\neostore.nodestore.db hit=2054 miss=0 switches=0 ooe=0
+2013-11-15 18:46:20.338+0000 INFO  [org.neo4j]: trial_adeha(m.)_0\neostore hit=0 miss=696 switches=0 ooe=0
+2013-11-15 18:46:20.340+0000 INFO  [org.neo4j]: NeoStore closed
+2013-11-15 18:46:20.340+0000 INFO  [org.neo4j]: --- STOPPING diagnostics START ---
+2013-11-15 18:46:20.340+0000 INFO  [org.neo4j]: --- STOPPING diagnostics END ---
+2013-11-16 00:17:02.032+0530: Opened [C:\Users\puneeth\Desktop\trial_adeha(m.)_0\nioneo_logical.log.1] clean empty log, version=1, lastTxId=681
+2013-11-16 00:17:02.065+0530: TM opening log: C:\Users\puneeth\Desktop\trial_adeha(m.)_0\tm_tx_log.2
+2013-11-16 00:17:02.080+0530: --- CONFIGURATION START ---
+2013-11-16 00:17:02.081+0530: Graph Database: org.neo4j.kernel.EmbeddedGraphDatabase StoreId[time:1384541162653, id:-2927343580907942488, store version: 13561656364791302]
+2013-11-16 00:17:02.081+0530: Physical mem: 4010MB, Heap size: 455MB
+2013-11-16 00:17:02.081+0530: Kernel version: neo4j-kernel 1.5
+2013-11-16 00:17:02.082+0530: Neo4j component versions:
+2013-11-16 00:17:02.084+0530:   neo4j-kernel 1.5
+2013-11-16 00:17:02.084+0530: Store versions:
+2013-11-16 00:17:02.084+0530:   NeoStore v0.A.0
+2013-11-16 00:17:02.085+0530:   NodeStore v0.A.0
+2013-11-16 00:17:02.085+0530:   RelationshipStore v0.A.0
+2013-11-16 00:17:02.085+0530:   RelationshipTypeStore v0.A.0
+2013-11-16 00:17:02.086+0530:   PropertyStore v0.A.0
+2013-11-16 00:17:02.086+0530:   PropertyIndexStore v0.A.0
+2013-11-16 00:17:02.086+0530:   StringPropertyStore v0.A.0
+2013-11-16 00:17:02.087+0530:   ArrayPropertyStore v0.A.0
+2013-11-16 00:17:02.089+0530: Process id: 3016@puneeth-PC
+2013-11-16 00:17:02.089+0530: Operating System: Windows 7; version: 6.1; arch: amd64; cpus: 4
+2013-11-16 00:17:02.090+0530: Total Physical memory: 3.92 GB
+2013-11-16 00:17:02.091+0530: Free Physical memory: 2.21 GB
+2013-11-16 00:17:02.092+0530: Committed virtual memory: 411.25 MB
+2013-11-16 00:17:02.092+0530: Total swap space: 7.83 GB
+2013-11-16 00:17:02.093+0530: Free swap space: 5.11 GB
+2013-11-16 00:17:02.095+0530: Byte order: LITTLE_ENDIAN
+2013-11-16 00:17:02.095+0530: VM Name: Java HotSpot(TM) 64-Bit Server VM
+2013-11-16 00:17:02.095+0530: VM Vendor: Oracle Corporation
+2013-11-16 00:17:02.095+0530: VM Version: 23.21-b01
+2013-11-16 00:17:02.096+0530: JIT compiler: HotSpot 64-Bit Tiered Compilers
+2013-11-16 00:17:02.112+0530: Class Path:
+2013-11-16 00:17:02.112+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\boot_pt_PT.jar
+2013-11-16 00:17:02.112+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\boot_it.jar
+2013-11-16 00:17:02.112+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util-lookup_in_ID.jar
+2013-11-16 00:17:02.112+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/boot_tr.jar
+2013-11-16 00:17:02.112+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util-lookup_pl.jar
+2013-11-16 00:17:02.112+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-modules_sv.jar
+2013-11-16 00:17:02.113+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util-lookup_it.jar
+2013-11-16 00:17:02.113+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util-lookup_ru.jar
+2013-11-16 00:17:02.113+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\boot_de.jar
+2013-11-16 00:17:02.113+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util_zh_CN.jar
+2013-11-16 00:17:02.113+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/org-openide-util-lookup.jar
+2013-11-16 00:17:02.113+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/boot_de.jar
+2013-11-16 00:17:02.113+0530:    [loader.2] file:/C:/Program%20Files/Java/jdk1.7.0_21/jre/lib/ext/sunec.jar
+2013-11-16 00:17:02.113+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\boot_ja.jar
+2013-11-16 00:17:02.113+0530:    [bootstrap] C:\Program Files\Java\jdk1.7.0_21\jre\lib\rt.jar
+2013-11-16 00:17:02.113+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/boot_in_ID.jar
+2013-11-16 00:17:02.114+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-modules_de.jar
+2013-11-16 00:17:02.114+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-modules_pl.jar
+2013-11-16 00:17:02.114+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\boot_ru.jar
+2013-11-16 00:17:02.114+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util-lookup_sv.jar
+2013-11-16 00:17:02.114+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util_it.jar
+2013-11-16 00:17:02.114+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/boot_sv.jar
+2013-11-16 00:17:02.114+0530:    [loader.2] file:/C:/Program%20Files/Java/jdk1.7.0_21/jre/lib/ext/access-bridge-64.jar
+2013-11-16 00:17:02.114+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\boot_ar_SA.jar
+2013-11-16 00:17:02.114+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util_fr.jar
+2013-11-16 00:17:02.114+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/boot_zh_CN.jar
+2013-11-16 00:17:02.114+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util-lookup_zh_CN.jar
+2013-11-16 00:17:02.115+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-modules_fr.jar
+2013-11-16 00:17:02.115+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\boot_es.jar
+2013-11-16 00:17:02.115+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util_it.jar
+2013-11-16 00:17:02.115+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util_si.jar
+2013-11-16 00:17:02.115+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-modules_sq.jar
+2013-11-16 00:17:02.115+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util_in_ID.jar
+2013-11-16 00:17:02.115+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\org-openide-modules.jar
+2013-11-16 00:17:02.115+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util-lookup_fr.jar
+2013-11-16 00:17:02.115+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/org-openide-util.jar
+2013-11-16 00:17:02.115+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\boot_zh_CN.jar
+2013-11-16 00:17:02.116+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util_gl_ES.jar
+2013-11-16 00:17:02.116+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util_ru.jar
+2013-11-16 00:17:02.116+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\boot_zh_TW.jar
+2013-11-16 00:17:02.116+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util_cs.jar
+2013-11-16 00:17:02.116+0530:    [loader.1] file:/C:/Program%20Files/Java/jdk1.7.0_21/lib/tools.jar
+2013-11-16 00:17:02.116+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util-lookup_it.jar
+2013-11-16 00:17:02.116+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util-lookup_gl_ES.jar
+2013-11-16 00:17:02.116+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\boot_pl.jar
+2013-11-16 00:17:02.116+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util-lookup_tr.jar
+2013-11-16 00:17:02.116+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util-lookup_ca.jar
+2013-11-16 00:17:02.116+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/boot_ar_SA.jar
+2013-11-16 00:17:02.117+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\boot_bg.jar
+2013-11-16 00:17:02.117+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util-lookup_bg.jar
+2013-11-16 00:17:02.117+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-modules_es.jar
+2013-11-16 00:17:02.117+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-modules_ru.jar
+2013-11-16 00:17:02.117+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util_ru.jar
+2013-11-16 00:17:02.117+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util_zh_CN.jar
+2013-11-16 00:17:02.117+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\boot_cs.jar
+2013-11-16 00:17:02.117+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util-lookup_fr.jar
+2013-11-16 00:17:02.117+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util-lookup_sv.jar
+2013-11-16 00:17:02.117+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\boot_in_ID.jar
+2013-11-16 00:17:02.117+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/boot_sq.jar
+2013-11-16 00:17:02.118+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util_nl_NL.jar
+2013-11-16 00:17:02.118+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util_tr.jar
+2013-11-16 00:17:02.118+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-modules_pt_BR.jar
+2013-11-16 00:17:02.118+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-modules_ro.jar
+2013-11-16 00:17:02.118+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util-lookup_ja.jar
+2013-11-16 00:17:02.118+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-modules_si.jar
+2013-11-16 00:17:02.118+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-modules_pl.jar
+2013-11-16 00:17:02.118+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util_zh_TW.jar
+2013-11-16 00:17:02.118+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/boot_ja.jar
+2013-11-16 00:17:02.118+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util_pt_BR.jar
+2013-11-16 00:17:02.118+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-modules_ca.jar
+2013-11-16 00:17:02.119+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\boot_sq.jar
+2013-11-16 00:17:02.119+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util_sq.jar
+2013-11-16 00:17:02.119+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util-lookup_zh_CN.jar
+2013-11-16 00:17:02.119+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util-lookup_ko.jar
+2013-11-16 00:17:02.119+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\boot_gl_ES.jar
+2013-11-16 00:17:02.119+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/org-openide-modules.jar
+2013-11-16 00:17:02.119+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-modules_it.jar
+2013-11-16 00:17:02.119+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-modules_sv.jar
+2013-11-16 00:17:02.119+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-modules_bg.jar
+2013-11-16 00:17:02.119+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-modules_es.jar
+2013-11-16 00:17:02.120+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util-lookup_tr.jar
+2013-11-16 00:17:02.120+0530:    [loader.2] file:/C:/Program%20Files/Java/jdk1.7.0_21/jre/lib/ext/zipfs.jar
+2013-11-16 00:17:02.120+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\boot_si.jar
+2013-11-16 00:17:02.120+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\boot_nl_NL.jar
+2013-11-16 00:17:02.120+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util-lookup_cs.jar
+2013-11-16 00:17:02.120+0530:    [loader.2] file:/C:/Program%20Files/Java/jdk1.7.0_21/jre/lib/ext/localedata.jar
+2013-11-16 00:17:02.120+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util_cs.jar
+2013-11-16 00:17:02.120+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util_sv.jar
+2013-11-16 00:17:02.120+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util_in_ID.jar
+2013-11-16 00:17:02.120+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-modules_it.jar
+2013-11-16 00:17:02.121+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\boot_ca.jar
+2013-11-16 00:17:02.121+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util_ar_SA.jar
+2013-11-16 00:17:02.121+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-modules_ar_SA.jar
+2013-11-16 00:17:02.121+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/boot_zh_TW.jar
+2013-11-16 00:17:02.121+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util-lookup_si.jar
+2013-11-16 00:17:02.121+0530:    [bootstrap] C:\Program Files\Java\jdk1.7.0_21\jre\lib\jsse.jar
+2013-11-16 00:17:02.121+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util_sq.jar
+2013-11-16 00:17:02.121+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-modules_ro.jar
+2013-11-16 00:17:02.121+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-modules_nl_NL.jar
+2013-11-16 00:17:02.121+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util_ko.jar
+2013-11-16 00:17:02.121+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\boot_fr.jar
+2013-11-16 00:17:02.122+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util_es.jar
+2013-11-16 00:17:02.122+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/boot_ro.jar
+2013-11-16 00:17:02.122+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util-lookup_pl.jar
+2013-11-16 00:17:02.122+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util_pl.jar
+2013-11-16 00:17:02.122+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/boot_es.jar
+2013-11-16 00:17:02.122+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-modules_tr.jar
+2013-11-16 00:17:02.122+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util_sv.jar
+2013-11-16 00:17:02.122+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util_pl.jar
+2013-11-16 00:17:02.122+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-modules_bg.jar
+2013-11-16 00:17:02.122+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util_de.jar
+2013-11-16 00:17:02.123+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\boot_pt_BR.jar
+2013-11-16 00:17:02.123+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util_ca.jar
+2013-11-16 00:17:02.123+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util_pt_BR.jar
+2013-11-16 00:17:02.123+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-modules_ko.jar
+2013-11-16 00:17:02.123+0530:    [loader.2] file:/C:/Program%20Files/Java/jdk1.7.0_21/jre/lib/ext/sunjce_provider.jar
+2013-11-16 00:17:02.123+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util-lookup_pt_BR.jar
+2013-11-16 00:17:02.123+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\boot_ro.jar
+2013-11-16 00:17:02.123+0530:    [loader.2] file:/C:/Program%20Files/Java/jdk1.7.0_21/jre/lib/ext/sunmscapi.jar
+2013-11-16 00:17:02.123+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util_fr.jar
+2013-11-16 00:17:02.123+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-modules_gl_ES.jar
+2013-11-16 00:17:02.123+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util_ar_SA.jar
+2013-11-16 00:17:02.124+0530:    [bootstrap] C:\Program Files\Java\jdk1.7.0_21\jre\lib\sunrsasign.jar
+2013-11-16 00:17:02.124+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/boot_fr.jar
+2013-11-16 00:17:02.124+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-modules_ja.jar
+2013-11-16 00:17:02.124+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util-lookup_bg.jar
+2013-11-16 00:17:02.124+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util-lookup_ca.jar
+2013-11-16 00:17:02.124+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util-lookup_nl_NL.jar
+2013-11-16 00:17:02.124+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-modules_nl_NL.jar
+2013-11-16 00:17:02.124+0530:    [bootstrap] C:\Program Files\Java\jdk1.7.0_21\jre\lib\resources.jar
+2013-11-16 00:17:02.124+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-modules_in_ID.jar
+2013-11-16 00:17:02.124+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util-lookup_ro.jar
+2013-11-16 00:17:02.125+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\boot.jar
+2013-11-16 00:17:02.125+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-modules_sq.jar
+2013-11-16 00:17:02.125+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/boot_ko.jar
+2013-11-16 00:17:02.125+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util_bg.jar
+2013-11-16 00:17:02.125+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util_ko.jar
+2013-11-16 00:17:02.125+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util-lookup_de.jar
+2013-11-16 00:17:02.125+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/boot_pt_PT.jar
+2013-11-16 00:17:02.125+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util-lookup_de.jar
+2013-11-16 00:17:02.125+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-modules_pt_PT.jar
+2013-11-16 00:17:02.125+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-modules_gl_ES.jar
+2013-11-16 00:17:02.125+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util_tr.jar
+2013-11-16 00:17:02.125+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-modules_fr.jar
+2013-11-16 00:17:02.125+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util-lookup_ru.jar
+2013-11-16 00:17:02.126+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-modules_tr.jar
+2013-11-16 00:17:02.126+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/boot_bg.jar
+2013-11-16 00:17:02.126+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/boot_ca.jar
+2013-11-16 00:17:02.126+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-modules_de.jar
+2013-11-16 00:17:02.126+0530:    [loader.2] file:/C:/Program%20Files/Java/jdk1.7.0_21/jre/lib/ext/dnsns.jar
+2013-11-16 00:17:02.126+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util-lookup_ro.jar
+2013-11-16 00:17:02.126+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-modules_zh_TW.jar
+2013-11-16 00:17:02.126+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/boot_pl.jar
+2013-11-16 00:17:02.126+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util_pt_PT.jar
+2013-11-16 00:17:02.126+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-modules_pt_BR.jar
+2013-11-16 00:17:02.126+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\org-openide-util.jar
+2013-11-16 00:17:02.126+0530:    [bootstrap] C:\Program Files\Java\jdk1.7.0_21\jre\lib\jce.jar
+2013-11-16 00:17:02.127+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-modules_si.jar
+2013-11-16 00:17:02.127+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util-lookup_ko.jar
+2013-11-16 00:17:02.127+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util_bg.jar
+2013-11-16 00:17:02.127+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-modules_zh_TW.jar
+2013-11-16 00:17:02.127+0530:    [classpath] C:\Program Files\Java\jdk1.7.0_21\lib\tools.jar
+2013-11-16 00:17:02.127+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-modules_cs.jar
+2013-11-16 00:17:02.127+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-modules_in_ID.jar
+2013-11-16 00:17:02.127+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util-lookup_pt_BR.jar
+2013-11-16 00:17:02.127+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util_zh_TW.jar
+2013-11-16 00:17:02.127+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util_gl_ES.jar
+2013-11-16 00:17:02.127+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\boot_tr.jar
+2013-11-16 00:17:02.127+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-modules_ru.jar
+2013-11-16 00:17:02.127+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util_es.jar
+2013-11-16 00:17:02.127+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-modules_ja.jar
+2013-11-16 00:17:02.128+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/boot_ru.jar
+2013-11-16 00:17:02.128+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util_pt_PT.jar
+2013-11-16 00:17:02.128+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\boot_ko.jar
+2013-11-16 00:17:02.128+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/boot_nl_NL.jar
+2013-11-16 00:17:02.128+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-modules_zh_CN.jar
+2013-11-16 00:17:02.128+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-modules_ar_SA.jar
+2013-11-16 00:17:02.128+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/boot_pt_BR.jar
+2013-11-16 00:17:02.128+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\org-openide-util-lookup.jar
+2013-11-16 00:17:02.128+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util_ja.jar
+2013-11-16 00:17:02.128+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util_ca.jar
+2013-11-16 00:17:02.128+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util-lookup_ja.jar
+2013-11-16 00:17:02.128+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util-lookup_in_ID.jar
+2013-11-16 00:17:02.128+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util_si.jar
+2013-11-16 00:17:02.129+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util_ro.jar
+2013-11-16 00:17:02.129+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\boot_sv.jar
+2013-11-16 00:17:02.129+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-modules_ko.jar
+2013-11-16 00:17:02.129+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util-lookup_es.jar
+2013-11-16 00:17:02.129+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-modules_zh_CN.jar
+2013-11-16 00:17:02.129+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util_ro.jar
+2013-11-16 00:17:02.129+0530:    [classpath] C:\Program Files\Java\jdk1.7.0_21\lib\dt.jar
+2013-11-16 00:17:02.129+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/boot_it.jar
+2013-11-16 00:17:02.129+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/boot_gl_ES.jar
+2013-11-16 00:17:02.129+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/boot.jar
+2013-11-16 00:17:02.129+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util-lookup_gl_ES.jar
+2013-11-16 00:17:02.129+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util_de.jar
+2013-11-16 00:17:02.129+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-modules_ca.jar
+2013-11-16 00:17:02.130+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-modules_pt_PT.jar
+2013-11-16 00:17:02.130+0530:    [loader.2] file:/C:/Program%20Files/Java/jdk1.7.0_21/jre/lib/ext/jaccess.jar
+2013-11-16 00:17:02.130+0530:    [bootstrap] C:\Program Files\Java\jdk1.7.0_21\jre\classes
+2013-11-16 00:17:02.130+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util-lookup_nl_NL.jar
+2013-11-16 00:17:02.130+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/boot_si.jar
+2013-11-16 00:17:02.130+0530:    [loader.1] file:/C:/Program%20Files/Java/jdk1.7.0_21/lib/dt.jar
+2013-11-16 00:17:02.130+0530:    [bootstrap] C:\Program Files\Java\jdk1.7.0_21\jre\lib\jfr.jar
+2013-11-16 00:17:02.130+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/boot_cs.jar
+2013-11-16 00:17:02.131+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util-lookup_si.jar
+2013-11-16 00:17:02.131+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util_nl_NL.jar
+2013-11-16 00:17:02.131+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-modules_cs.jar
+2013-11-16 00:17:02.131+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util-lookup_cs.jar
+2013-11-16 00:17:02.131+0530:    [bootstrap] C:\Program Files\Java\jdk1.7.0_21\jre\lib\charsets.jar
+2013-11-16 00:17:02.131+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util_ja.jar
+2013-11-16 00:17:02.131+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util-lookup_es.jar
+2013-11-16 00:17:02.131+0530: Library Path:
+2013-11-16 00:17:02.131+0530:   C:\Program Files (x86)\Gephi-0.8.2\bin
+2013-11-16 00:17:02.132+0530:   C:\Windows\Sun\Java\bin
+2013-11-16 00:17:02.132+0530:   C:\Windows\System32
+2013-11-16 00:17:02.132+0530:   C:\Windows
+2013-11-16 00:17:02.132+0530:   C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common
+2013-11-16 00:17:02.132+0530:   C:\Windows\System32
+2013-11-16 00:17:02.132+0530:   C:\Windows
+2013-11-16 00:17:02.133+0530:   C:\Windows\System32\wbem
+2013-11-16 00:17:02.133+0530:   C:\Windows\System32\WindowsPowerShell\v1.0
+2013-11-16 00:17:02.133+0530:   C:\Program Files\MySQL\MySQL Server 5.5\bin
+2013-11-16 00:17:02.133+0530:   C:\Program Files\MATLAB\R2010a\runtime\win64
+2013-11-16 00:17:02.134+0530:   C:\Program Files\MATLAB\R2010a\bin
+2013-11-16 00:17:02.134+0530:   C:\Program Files (x86)\Subversion\bin
+2013-11-16 00:17:02.134+0530:   C:\Go\bin
+2013-11-16 00:17:02.134+0530:   C:\Program Files\Java\jdk1.7.0_21\bin
+2013-11-16 00:17:02.134+0530:   E:\MOOCs\Recommendation Systems\apache-maven-3.1.0\bin
+2013-11-16 00:17:02.135+0530:   E:\MOOCs\Recommendation Systems\lenskit-2.0\bin
+2013-11-16 00:17:02.135+0530:   C:\cygwin64\bin
+2013-11-16 00:17:02.135+0530:   C:\Program Files (x86)\Gephi-0.8.2
+2013-11-16 00:17:02.135+0530:   C:\Program Files (x86)\Gephi-0.8.2
+2013-11-16 00:17:02.135+0530:   C:\Program Files (x86)\Gephi-0.8.2
+2013-11-16 00:17:02.135+0530:   C:\Program Files (x86)\Gephi-0.8.2
+2013-11-16 00:17:02.136+0530:   C:\Program Files (x86)\Gephi-0.8.2
+2013-11-16 00:17:02.136+0530:   C:\Program Files (x86)\Gephi-0.8.2
+2013-11-16 00:17:02.136+0530:   C:\Program Files (x86)\Gephi-0.8.2
+2013-11-16 00:17:02.136+0530:   C:\Program Files (x86)\Gephi-0.8.2
+2013-11-16 00:17:02.136+0530: Garbage Collector: PS Scavenge: [PS Eden Space, PS Survivor Space]
+2013-11-16 00:17:02.136+0530: Garbage Collector: PS MarkSweep: [PS Eden Space, PS Survivor Space, PS Old Gen, PS Perm Gen]
+2013-11-16 00:17:02.137+0530: Memory Pool: Code Cache (Non-heap memory): committed=2.44 MB, used=2.38 MB, max=48.00 MB, threshold=0.00 B
+2013-11-16 00:17:02.137+0530: Memory Pool: PS Eden Space (Heap memory): committed=127.56 MB, used=103.33 MB, max=150.31 MB, threshold=?
+2013-11-16 00:17:02.137+0530: Memory Pool: PS Survivor Space (Heap memory): committed=9.69 MB, used=8.74 MB, max=9.69 MB, threshold=?
+2013-11-16 00:17:02.138+0530: Memory Pool: PS Old Gen (Heap memory): committed=42.69 MB, used=16.52 MB, max=341.38 MB, threshold=321.38 MB
+2013-11-16 00:17:02.138+0530: Memory Pool: PS Perm Gen (Non-heap memory): committed=46.63 MB, used=46.55 MB, max=384.00 MB, threshold=0.00 B
+2013-11-16 00:17:02.138+0530: VM Arguments: [-Xms64m, -Xmx512m, -Xverify:none, -Dsun.java2d.noddraw=true, -Dsun.awt.noerasebackground=true, -Dnetbeans.indexing.noFileRefresh=true, -Dplugin.manager.check.interval=EVERY_DAY, -XX:MaxPermSize=384m, -Dnetbeans.user.dir=C:\Program Files (x86)\Gephi-0.8.2\bin, -Djdk.home=C:\Program Files\Java\jdk1.7.0_21, -splash:C:\Users\puneeth\AppData\Roaming\.gephi\0.8.2\dev\var\cache\splash.png, -Dnetbeans.home=C:\Program Files (x86)\Gephi-0.8.2\platform, -Dnetbeans.user=C:\Users\puneeth\AppData\Roaming\.gephi\0.8.2\dev, -Dnetbeans.default_userdir_root=, -XX:+HeapDumpOnOutOfMemoryError, -XX:HeapDumpPath=C:\Users\puneeth\AppData\Roaming\.gephi\0.8.2\dev\var\log\heapdump.hprof, -Dnetbeans.system_http_proxy=192.168.3.254:8080, -Dnetbeans.system_http_non_proxy_hosts=<local>, -Dsun.awt.keepWorkingSetOnMinimize=true, -Dnetbeans.dirs=C:\Program Files (x86)\Gephi-0.8.2\gephi;C:\Program Files (x86)\Gephi-0.8.2\platform]
+2013-11-16 00:17:02.138+0530: System properties:
+2013-11-16 00:17:02.138+0530:   netbeans.user = C:\Users\puneeth\AppData\Roaming\.gephi\0.8.2\dev
+2013-11-16 00:17:02.139+0530:   sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+2013-11-16 00:17:02.139+0530:   netbeans.autoupdate.version = 1.23
+2013-11-16 00:17:02.139+0530:   https.proxyHost = 192.168.3.254
+2013-11-16 00:17:02.139+0530:   plugin.manager.check.interval = EVERY_DAY
+2013-11-16 00:17:02.139+0530:   sun.desktop = windows
+2013-11-16 00:17:02.139+0530:   netbeans.default_userdir_root = 
+2013-11-16 00:17:02.139+0530:   http.proxyPort = 8080
+2013-11-16 00:17:02.139+0530:   user.name = puneeth
+2013-11-16 00:17:02.139+0530:   user.language = en
+2013-11-16 00:17:02.140+0530:   sun.boot.library.path = C:\Program Files\Java\jdk1.7.0_21\jre\bin
+2013-11-16 00:17:02.140+0530:   user.timezone = Asia/Calcutta
+2013-11-16 00:17:02.140+0530:   sun.arch.data.model = 64
+2013-11-16 00:17:02.140+0530:   netbeans.productversion = Gephi 0.8.2 201210100934
+2013-11-16 00:17:02.140+0530:   sun.cpu.isalist = amd64
+2013-11-16 00:17:02.140+0530:   sun.jnu.encoding = Cp1252
+2013-11-16 00:17:02.140+0530:   file.encoding.pkg = sun.io
+2013-11-16 00:17:02.140+0530:   file.separator = \
+2013-11-16 00:17:02.140+0530:   user.country = US
+2013-11-16 00:17:02.140+0530:   sun.awt.noerasebackground = true
+2013-11-16 00:17:02.140+0530:   netbeans.buildnumber = 201210100934
+2013-11-16 00:17:02.141+0530:   org.openide.version = deprecated
+2013-11-16 00:17:02.141+0530:   netbeans.hash.code = unique=0832e5089-a3aa-4953-ab04-4d696957aff7_3a866271-2b16-4921-8c34-431afe1f6d9e
+2013-11-16 00:17:02.141+0530:   netbeans.system_http_proxy = 192.168.3.254:8080
+2013-11-16 00:17:02.141+0530:   https.proxyPort = 8080
+2013-11-16 00:17:02.141+0530:   netbeans.autoupdate.country = US
+2013-11-16 00:17:02.141+0530:   netbeans.indexing.noFileRefresh = true
+2013-11-16 00:17:02.141+0530:   netbeans.user.dir = C:\Program Files (x86)\Gephi-0.8.2\bin
+2013-11-16 00:17:02.141+0530:   sun.awt.keepWorkingSetOnMinimize = true
+2013-11-16 00:17:02.141+0530:   path.separator = ;
+2013-11-16 00:17:02.142+0530:   user.variant = 
+2013-11-16 00:17:02.142+0530:   netbeans.dynamic.classpath = C:\Program Files (x86)\Gephi-0.8.2\platform\core\core.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\org-openide-filesystems.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\core_ar_SA.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\core_bg.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\core_ca.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\core_cs.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\core_de.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\core_es.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\core_fr.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\core_gl_ES.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\core_in_ID.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\core_it.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\core_ja.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\core_ko.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\core_nl_NL.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\core_pl.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\core_pt_BR.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\core_pt_PT.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\core_ro.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\core_ru.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\core_si.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\core_sq.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\core_sv.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\core_tr.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\core_zh_CN.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\core_zh_TW.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\org-openide-filesystems_ar_SA.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\org-openide-filesystems_bg.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\org-openide-filesystems_ca.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\org-openide-filesystems_cs.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\org-openide-filesystems_de.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\org-openide-filesystems_es.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\org-openide-filesystems_fr.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\org-openide-filesystems_gl_ES.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\org-openide-filesystems_in_ID.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\org-openide-filesystems_it.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\org-openide-filesystems_ja.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\org-openide-filesystems_ko.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\org-openide-filesystems_nl_NL.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\org-openide-filesystems_pl.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\org-openide-filesystems_pt_BR.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\org-openide-filesystems_pt_PT.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\org-openide-filesystems_ro.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\org-openide-filesystems_ru.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\org-openide-filesystems_si.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\org-openide-filesystems_sq.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\org-openide-filesystems_sv.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\org-openide-filesystems_tr.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\org-openide-filesystems_zh_CN.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\org-openide-filesystems_zh_TW.jar;C:\Program Files (x86)\Gephi-0.8.2\gephi\core\locale\core_gephi.jar
+2013-11-16 00:17:02.142+0530:   jna.boot.library.name = jnidispatch-340
+2013-11-16 00:17:02.142+0530:   sun.awt.enableExtraMouseButtons = true
+2013-11-16 00:17:02.142+0530:   sun.io.unicode.encoding = UnicodeLittle
+2013-11-16 00:17:02.142+0530:   netbeans.autoupdate.variant = 
+2013-11-16 00:17:02.142+0530:   awt.toolkit = sun.awt.windows.WToolkit
+2013-11-16 00:17:02.142+0530:   user.script = 
+2013-11-16 00:17:02.142+0530:   org.openide.major.version = IDE/1
+2013-11-16 00:17:02.142+0530:   user.home = C:\Users\puneeth
+2013-11-16 00:17:02.142+0530:   netbeans.home = C:\Program Files (x86)\Gephi-0.8.2\platform
+2013-11-16 00:17:02.143+0530:   org.xml.sax.driver = com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser
+2013-11-16 00:17:02.143+0530:   sun.java2d.noddraw = true
+2013-11-16 00:17:02.143+0530:   jdk.home = C:\Program Files\Java\jdk1.7.0_21
+2013-11-16 00:17:02.143+0530:   org.openide.specification.version = 6.2
+2013-11-16 00:17:02.143+0530:   sun.cpu.endian = little
+2013-11-16 00:17:02.143+0530:   sun.os.patch.level = 
+2013-11-16 00:17:02.143+0530:   netbeans.dirs = C:\Program Files (x86)\Gephi-0.8.2\gephi;C:\Program Files (x86)\Gephi-0.8.2\platform
+2013-11-16 00:17:02.143+0530:   http.proxyHost = 192.168.3.254
+2013-11-16 00:17:02.143+0530:   netbeans.autoupdate.language = en
+2013-11-16 00:17:02.143+0530:   neo4j.ext.udc.source = maven
+2013-11-16 00:17:02.143+0530:   user.dir = C:\Program Files (x86)\Gephi-0.8.2
+2013-11-16 00:17:02.143+0530:   file.encoding = Cp1252
+2013-11-16 00:17:02.144+0530:   netbeans.system_http_non_proxy_hosts = <local>
+2013-11-16 00:17:02.144+0530: Neo4j Kernel properties:
+2013-11-16 00:17:02.144+0530:   store_dir=C:\Users\puneeth\Desktop\trial_adeha(m.)_0
+2013-11-16 00:17:02.144+0530:   logical_log=C:\Users\puneeth\Desktop\trial_adeha(m.)_0\nioneo_logical.log
+2013-11-16 00:17:02.144+0530:   node_auto_indexing=false
+2013-11-16 00:17:02.144+0530:   neostore.relationshipstore.db.mapped_memory=100M
+2013-11-16 00:17:02.144+0530:   neostore.nodestore.db.mapped_memory=20M
+2013-11-16 00:17:02.144+0530:   use_memory_mapped_buffers=false
+2013-11-16 00:17:02.144+0530:   rebuild_idgenerators_fast=true
+2013-11-16 00:17:02.144+0530:   neostore.propertystore.db.index.keys.mapped_memory=1M
+2013-11-16 00:17:02.144+0530:   neostore.propertystore.db.arrays.mapped_memory=130M
+2013-11-16 00:17:02.145+0530:   neostore.propertystore.db.strings.mapped_memory=130M
+2013-11-16 00:17:02.145+0530:   neo_store=C:\Users\puneeth\Desktop\trial_adeha(m.)_0\neostore
+2013-11-16 00:17:02.145+0530:   neostore.propertystore.db.index.mapped_memory=1M
+2013-11-16 00:17:02.145+0530:   create=true
+2013-11-16 00:17:02.145+0530:   neostore.propertystore.db.mapped_memory=90M
+2013-11-16 00:17:02.145+0530:   relationship_auto_indexing=false
+2013-11-16 00:17:02.145+0530: Storage files:
+2013-11-16 00:17:02.146+0530:   active_tx_log: 11.00 B
+2013-11-16 00:17:02.146+0530:   index:
+2013-11-16 00:17:02.146+0530:     lucene:
+2013-11-16 00:17:02.146+0530:       node:
+2013-11-16 00:17:02.146+0530:         words:
+2013-11-16 00:17:02.147+0530:           segments.gen: 20.00 B
+2013-11-16 00:17:02.147+0530:           segments_1: 514.00 B
+2013-11-16 00:17:02.147+0530:           _ka.fdt: 14.39 kB
+2013-11-16 00:17:02.147+0530:           _ka.fdx: 5.15 kB
+2013-11-16 00:17:02.147+0530:           _ka.fnm: 16.00 B
+2013-11-16 00:17:02.148+0530:           _ka.frq: 2.45 kB
+2013-11-16 00:17:02.148+0530:           _ka.nrm: 663.00 B
+2013-11-16 00:17:02.148+0530:           _ka.prx: 1.29 kB
+2013-11-16 00:17:02.148+0530:           _ka.tii: 215.00 B
+2013-11-16 00:17:02.148+0530:           _ka.tis: 14.44 kB
+2013-11-16 00:17:02.149+0530:           _kb.cfs: 255.00 B
+2013-11-16 00:17:02.149+0530:         - Total: 39.36 kB
+2013-11-16 00:17:02.149+0530:       - Total: 39.36 kB
+2013-11-16 00:17:02.149+0530:     - Total: 39.36 kB
+2013-11-16 00:17:02.149+0530:     lucene-store.db: 40.00 B
+2013-11-16 00:17:02.149+0530:     lucene.log.active: 4.00 B
+2013-11-16 00:17:02.150+0530:     lucene.log.v0: 105.80 kB
+2013-11-16 00:17:02.150+0530:   - Total: 145.20 kB
+2013-11-16 00:17:02.150+0530:   index.db: 103.00 B
+2013-11-16 00:17:02.150+0530:   lock: 0.00 B
+2013-11-16 00:17:02.150+0530:   messages.log: 64.89 kB
+2013-11-16 00:17:02.150+0530:   neostore: 54.00 B
+2013-11-16 00:17:02.151+0530:   neostore.id: 9.00 B
+2013-11-16 00:17:02.151+0530:   neostore.nodestore.db: 5.81 kB
+2013-11-16 00:17:02.151+0530:   neostore.nodestore.db.id: 9.00 B
+2013-11-16 00:17:02.151+0530:   neostore.propertystore.db: 68.23 kB
+2013-11-16 00:17:02.151+0530:   neostore.propertystore.db.arrays: 128.00 B
+2013-11-16 00:17:02.151+0530:   neostore.propertystore.db.arrays.id: 9.00 B
+2013-11-16 00:17:02.152+0530:   neostore.propertystore.db.id: 9.00 B
+2013-11-16 00:17:02.152+0530:   neostore.propertystore.db.index: 27.00 B
+2013-11-16 00:17:02.152+0530:   neostore.propertystore.db.index.id: 9.00 B
+2013-11-16 00:17:02.152+0530:   neostore.propertystore.db.index.keys: 152.00 B
+2013-11-16 00:17:02.152+0530:   neostore.propertystore.db.index.keys.id: 9.00 B
+2013-11-16 00:17:02.152+0530:   neostore.propertystore.db.strings: 384.00 B
+2013-11-16 00:17:02.153+0530:   neostore.propertystore.db.strings.id: 9.00 B
+2013-11-16 00:17:02.153+0530:   neostore.relationshipstore.db: 21.88 kB
+2013-11-16 00:17:02.153+0530:   neostore.relationshipstore.db.id: 9.00 B
+2013-11-16 00:17:02.153+0530:   neostore.relationshiptypestore.db: 5.00 B
+2013-11-16 00:17:02.153+0530:   neostore.relationshiptypestore.db.id: 9.00 B
+2013-11-16 00:17:02.153+0530:   neostore.relationshiptypestore.db.names: 76.00 B
+2013-11-16 00:17:02.154+0530:   neostore.relationshiptypestore.db.names.id: 9.00 B
+2013-11-16 00:17:02.154+0530:   nioneo_logical.log.1: 16.00 B
+2013-11-16 00:17:02.154+0530:   nioneo_logical.log.active: 4.00 B
+2013-11-16 00:17:02.154+0530:   nioneo_logical.log.v0: 325.03 kB
+2013-11-16 00:17:02.154+0530:   store_lock: 0.00 B
+2013-11-16 00:17:02.155+0530:   tm_tx_log.1: 29.13 kB
+2013-11-16 00:17:02.155+0530:   tm_tx_log.2: 0.00 B
+2013-11-16 00:17:02.155+0530: Id usage:
+2013-11-16 00:17:02.155+0530:   NodeStore: used=661 high=660
+2013-11-16 00:17:02.155+0530:   RelationshipStore: used=679 high=678
+2013-11-16 00:17:02.155+0530:   RelationshipTypeStore: used=1 high=0
+2013-11-16 00:17:02.156+0530:   PropertyStore: used=1704 high=1703
+2013-11-16 00:17:02.156+0530:   PropertyIndexStore: used=3 high=2
+2013-11-16 00:17:02.156+0530:   StringPropertyStore: used=3 high=2
+2013-11-16 00:17:02.156+0530:   ArrayPropertyStore: used=1 high=0
+2013-11-16 00:17:02.156+0530: --- CONFIGURATION END ---
+2013-11-16 00:17:02.157+0530: Extension org.neo4j.kernel.KernelExtension[kernel udc] loaded ok
+2013-11-16 00:17:02.167+0530: Extension org.neo4j.kernel.KernelExtension[kernel jmx] loaded ok
+2013-11-16 00:17:41.171+0530: C:\Users\puneeth\Desktop\trial_adeha(m.)_0\neostore non clean shutdown detected
+2013-11-16 00:17:41.174+0530: C:\Users\puneeth\Desktop\trial_adeha(m.)_0\neostore.relationshiptypestore.db non clean shutdown detected
+2013-11-16 00:17:41.176+0530: C:\Users\puneeth\Desktop\trial_adeha(m.)_0\neostore.relationshiptypestore.db.names non clean shutdown detected
+2013-11-16 00:17:41.180+0530: C:\Users\puneeth\Desktop\trial_adeha(m.)_0\neostore.propertystore.db non clean shutdown detected
+2013-11-16 00:17:41.181+0530: C:\Users\puneeth\Desktop\trial_adeha(m.)_0\neostore.propertystore.db.strings non clean shutdown detected
+2013-11-16 00:17:41.182+0530: C:\Users\puneeth\Desktop\trial_adeha(m.)_0\neostore.propertystore.db.index non clean shutdown detected
+2013-11-16 00:17:41.182+0530: C:\Users\puneeth\Desktop\trial_adeha(m.)_0\neostore.propertystore.db.index.keys non clean shutdown detected
+2013-11-16 00:17:41.183+0530: C:\Users\puneeth\Desktop\trial_adeha(m.)_0\neostore.propertystore.db.arrays non clean shutdown detected
+2013-11-16 00:17:41.184+0530: C:\Users\puneeth\Desktop\trial_adeha(m.)_0\neostore.relationshipstore.db non clean shutdown detected
+2013-11-16 00:17:41.184+0530: C:\Users\puneeth\Desktop\trial_adeha(m.)_0\neostore.nodestore.db non clean shutdown detected
+2013-11-16 00:17:41.190+0530: Non clean shutdown detected on log [C:\Users\puneeth\Desktop\trial_adeha(m.)_0\nioneo_logical.log.1]. Recovery started ...
+2013-11-16 00:17:41.191+0530: [C:\Users\puneeth\Desktop\trial_adeha(m.)_0\nioneo_logical.log.1] logVersion=1 with committed tx=681
+2013-11-16 00:17:41.215+0530: [C:\Users\puneeth\Desktop\trial_adeha(m.)_0\nioneo_logical.log.1] entries found=0 lastEntryPos=16
+2013-11-16 00:17:41.215+0530: Internal recovery completed, scanned 0 log entries. Recovered 0 transactions. Last tx recovered: -1
+2013-11-16 00:17:41.216+0530: XaResourceManager[C:\Users\puneeth\Desktop\trial_adeha(m.)_0\nioneo_logical.log] sorting 0 xids
+2013-11-16 00:17:41.216+0530: XaResourceManager[C:\Users\puneeth\Desktop\trial_adeha(m.)_0\nioneo_logical.log] checkRecoveryComplete 0 xids
+2013-11-16 00:17:41.282+0530: C:\Users\puneeth\Desktop\trial_adeha(m.)_0\neostore.relationshiptypestore.db.names rebuild id generator, highId=2 defragged count=0
+2013-11-16 00:17:41.475+0530: C:\Users\puneeth\Desktop\trial_adeha(m.)_0\neostore.propertystore.db.index.keys rebuild id generator, highId=4 defragged count=0
+2013-11-16 00:17:41.562+0530: C:\Users\puneeth\Desktop\trial_adeha(m.)_0\neostore.propertystore.db.index rebuild id generator, highId=3 defragged count=0
+2013-11-16 00:17:41.690+0530: C:\Users\puneeth\Desktop\trial_adeha(m.)_0\neostore.propertystore.db.strings rebuild id generator, highId=3 defragged count=0
+2013-11-16 00:17:41.841+0530: C:\Users\puneeth\Desktop\trial_adeha(m.)_0\neostore.propertystore.db.arrays rebuild id generator, highId=1 defragged count=0
+2013-11-16 00:17:41.966+0530: C:\Users\puneeth\Desktop\trial_adeha(m.)_0\neostore.propertystore.db rebuild id generator, highId=1704 defragged count=0
+2013-11-16 00:17:42.058+0530: C:\Users\puneeth\Desktop\trial_adeha(m.)_0\neostore.relationshipstore.db rebuild id generator, highId=679 defragged count=0
+2013-11-16 00:17:42.158+0530: C:\Users\puneeth\Desktop\trial_adeha(m.)_0\neostore.nodestore.db rebuild id generator, highId=661 defragged count=0
+2013-11-16 00:17:42.241+0530: C:\Users\puneeth\Desktop\trial_adeha(m.)_0\neostore rebuild id generator, highId=6 defragged count=0
+2013-11-16 00:17:42.295+0530: XaResourceManager[C:\Users\puneeth\Desktop\trial_adeha(m.)_0\nioneo_logical.log] recovery completed.
+2013-11-16 00:17:42.295+0530: Recovery on log [C:\Users\puneeth\Desktop\trial_adeha(m.)_0\nioneo_logical.log.1] completed.
+2013-11-16 00:17:42.301+0530: TM opening log: C:\Users\puneeth\Desktop\trial_adeha(m.)_0\tm_tx_log.2
+2013-11-16 00:17:42.318+0530: --- CONFIGURATION START ---
+2013-11-16 00:17:42.319+0530: Graph Database: org.neo4j.kernel.EmbeddedGraphDatabase StoreId[time:1384541162653, id:-2927343580907942488, store version: 13561656364791302]
+2013-11-16 00:17:42.319+0530: Physical mem: 4010MB, Heap size: 455MB
+2013-11-16 00:17:42.321+0530: Kernel version: neo4j-kernel 1.5
+2013-11-16 00:17:42.321+0530: Neo4j component versions:
+2013-11-16 00:17:42.323+0530:   neo4j-kernel 1.5
+2013-11-16 00:17:42.323+0530: Store versions:
+2013-11-16 00:17:42.323+0530:   NeoStore v0.A.0
+2013-11-16 00:17:42.323+0530:   NodeStore v0.A.0
+2013-11-16 00:17:42.323+0530:   RelationshipStore v0.A.0
+2013-11-16 00:17:42.323+0530:   RelationshipTypeStore v0.A.0
+2013-11-16 00:17:42.323+0530:   PropertyStore v0.A.0
+2013-11-16 00:17:42.324+0530:   PropertyIndexStore v0.A.0
+2013-11-16 00:17:42.324+0530:   StringPropertyStore v0.A.0
+2013-11-16 00:17:42.324+0530:   ArrayPropertyStore v0.A.0
+2013-11-16 00:17:42.325+0530: Process id: 5940@puneeth-PC
+2013-11-16 00:17:42.325+0530: Operating System: Windows 7; version: 6.1; arch: amd64; cpus: 4
+2013-11-16 00:17:42.327+0530: Total Physical memory: 3.92 GB
+2013-11-16 00:17:42.328+0530: Free Physical memory: 2.24 GB
+2013-11-16 00:17:42.328+0530: Committed virtual memory: 399.30 MB
+2013-11-16 00:17:42.329+0530: Total swap space: 7.83 GB
+2013-11-16 00:17:42.329+0530: Free swap space: 5.12 GB
+2013-11-16 00:17:42.330+0530: Byte order: LITTLE_ENDIAN
+2013-11-16 00:17:42.330+0530: VM Name: Java HotSpot(TM) 64-Bit Server VM
+2013-11-16 00:17:42.331+0530: VM Vendor: Oracle Corporation
+2013-11-16 00:17:42.331+0530: VM Version: 23.21-b01
+2013-11-16 00:17:42.331+0530: JIT compiler: HotSpot 64-Bit Tiered Compilers
+2013-11-16 00:17:42.350+0530: Class Path:
+2013-11-16 00:17:42.350+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\boot_pt_PT.jar
+2013-11-16 00:17:42.350+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\boot_it.jar
+2013-11-16 00:17:42.350+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util-lookup_in_ID.jar
+2013-11-16 00:17:42.350+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/boot_tr.jar
+2013-11-16 00:17:42.350+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util-lookup_pl.jar
+2013-11-16 00:17:42.350+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-modules_sv.jar
+2013-11-16 00:17:42.350+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util-lookup_it.jar
+2013-11-16 00:17:42.350+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util-lookup_ru.jar
+2013-11-16 00:17:42.350+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\boot_de.jar
+2013-11-16 00:17:42.350+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util_zh_CN.jar
+2013-11-16 00:17:42.351+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/org-openide-util-lookup.jar
+2013-11-16 00:17:42.351+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/boot_de.jar
+2013-11-16 00:17:42.351+0530:    [loader.2] file:/C:/Program%20Files/Java/jdk1.7.0_21/jre/lib/ext/sunec.jar
+2013-11-16 00:17:42.351+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\boot_ja.jar
+2013-11-16 00:17:42.351+0530:    [bootstrap] C:\Program Files\Java\jdk1.7.0_21\jre\lib\rt.jar
+2013-11-16 00:17:42.351+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/boot_in_ID.jar
+2013-11-16 00:17:42.351+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-modules_de.jar
+2013-11-16 00:17:42.351+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-modules_pl.jar
+2013-11-16 00:17:42.351+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\boot_ru.jar
+2013-11-16 00:17:42.351+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util-lookup_sv.jar
+2013-11-16 00:17:42.351+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util_it.jar
+2013-11-16 00:17:42.351+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/boot_sv.jar
+2013-11-16 00:17:42.351+0530:    [loader.2] file:/C:/Program%20Files/Java/jdk1.7.0_21/jre/lib/ext/access-bridge-64.jar
+2013-11-16 00:17:42.352+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\boot_ar_SA.jar
+2013-11-16 00:17:42.352+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util_fr.jar
+2013-11-16 00:17:42.352+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/boot_zh_CN.jar
+2013-11-16 00:17:42.352+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util-lookup_zh_CN.jar
+2013-11-16 00:17:42.352+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-modules_fr.jar
+2013-11-16 00:17:42.352+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\boot_es.jar
+2013-11-16 00:17:42.352+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util_it.jar
+2013-11-16 00:17:42.352+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util_si.jar
+2013-11-16 00:17:42.352+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-modules_sq.jar
+2013-11-16 00:17:42.352+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util_in_ID.jar
+2013-11-16 00:17:42.352+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\org-openide-modules.jar
+2013-11-16 00:17:42.352+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util-lookup_fr.jar
+2013-11-16 00:17:42.352+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/org-openide-util.jar
+2013-11-16 00:17:42.352+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\boot_zh_CN.jar
+2013-11-16 00:17:42.353+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util_gl_ES.jar
+2013-11-16 00:17:42.353+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util_ru.jar
+2013-11-16 00:17:42.353+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\boot_zh_TW.jar
+2013-11-16 00:17:42.353+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util_cs.jar
+2013-11-16 00:17:42.353+0530:    [loader.1] file:/C:/Program%20Files/Java/jdk1.7.0_21/lib/tools.jar
+2013-11-16 00:17:42.353+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util-lookup_it.jar
+2013-11-16 00:17:42.353+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util-lookup_gl_ES.jar
+2013-11-16 00:17:42.353+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\boot_pl.jar
+2013-11-16 00:17:42.353+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util-lookup_tr.jar
+2013-11-16 00:17:42.353+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util-lookup_ca.jar
+2013-11-16 00:17:42.353+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/boot_ar_SA.jar
+2013-11-16 00:17:42.353+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\boot_bg.jar
+2013-11-16 00:17:42.353+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util-lookup_bg.jar
+2013-11-16 00:17:42.354+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-modules_es.jar
+2013-11-16 00:17:42.354+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-modules_ru.jar
+2013-11-16 00:17:42.354+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util_ru.jar
+2013-11-16 00:17:42.354+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util_zh_CN.jar
+2013-11-16 00:17:42.354+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\boot_cs.jar
+2013-11-16 00:17:42.354+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util-lookup_fr.jar
+2013-11-16 00:17:42.354+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util-lookup_sv.jar
+2013-11-16 00:17:42.354+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\boot_in_ID.jar
+2013-11-16 00:17:42.354+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/boot_sq.jar
+2013-11-16 00:17:42.354+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util_nl_NL.jar
+2013-11-16 00:17:42.354+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util_tr.jar
+2013-11-16 00:17:42.354+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-modules_pt_BR.jar
+2013-11-16 00:17:42.354+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-modules_ro.jar
+2013-11-16 00:17:42.355+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util-lookup_ja.jar
+2013-11-16 00:17:42.355+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-modules_si.jar
+2013-11-16 00:17:42.355+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-modules_pl.jar
+2013-11-16 00:17:42.355+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util_zh_TW.jar
+2013-11-16 00:17:42.355+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/boot_ja.jar
+2013-11-16 00:17:42.355+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util_pt_BR.jar
+2013-11-16 00:17:42.355+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-modules_ca.jar
+2013-11-16 00:17:42.355+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\boot_sq.jar
+2013-11-16 00:17:42.355+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util_sq.jar
+2013-11-16 00:17:42.355+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util-lookup_zh_CN.jar
+2013-11-16 00:17:42.355+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util-lookup_ko.jar
+2013-11-16 00:17:42.355+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\boot_gl_ES.jar
+2013-11-16 00:17:42.355+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/org-openide-modules.jar
+2013-11-16 00:17:42.355+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-modules_it.jar
+2013-11-16 00:17:42.356+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-modules_sv.jar
+2013-11-16 00:17:42.356+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-modules_bg.jar
+2013-11-16 00:17:42.356+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-modules_es.jar
+2013-11-16 00:17:42.356+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util-lookup_tr.jar
+2013-11-16 00:17:42.356+0530:    [loader.2] file:/C:/Program%20Files/Java/jdk1.7.0_21/jre/lib/ext/zipfs.jar
+2013-11-16 00:17:42.356+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\boot_si.jar
+2013-11-16 00:17:42.356+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\boot_nl_NL.jar
+2013-11-16 00:17:42.356+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util-lookup_cs.jar
+2013-11-16 00:17:42.356+0530:    [loader.2] file:/C:/Program%20Files/Java/jdk1.7.0_21/jre/lib/ext/localedata.jar
+2013-11-16 00:17:42.356+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util_cs.jar
+2013-11-16 00:17:42.356+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util_sv.jar
+2013-11-16 00:17:42.356+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util_in_ID.jar
+2013-11-16 00:17:42.356+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-modules_it.jar
+2013-11-16 00:17:42.356+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\boot_ca.jar
+2013-11-16 00:17:42.357+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util_ar_SA.jar
+2013-11-16 00:17:42.357+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-modules_ar_SA.jar
+2013-11-16 00:17:42.357+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/boot_zh_TW.jar
+2013-11-16 00:17:42.357+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util-lookup_si.jar
+2013-11-16 00:17:42.357+0530:    [bootstrap] C:\Program Files\Java\jdk1.7.0_21\jre\lib\jsse.jar
+2013-11-16 00:17:42.357+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util_sq.jar
+2013-11-16 00:17:42.357+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-modules_ro.jar
+2013-11-16 00:17:42.357+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-modules_nl_NL.jar
+2013-11-16 00:17:42.357+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util_ko.jar
+2013-11-16 00:17:42.357+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\boot_fr.jar
+2013-11-16 00:17:42.357+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util_es.jar
+2013-11-16 00:17:42.357+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/boot_ro.jar
+2013-11-16 00:17:42.357+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util-lookup_pl.jar
+2013-11-16 00:17:42.357+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util_pl.jar
+2013-11-16 00:17:42.358+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/boot_es.jar
+2013-11-16 00:17:42.358+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-modules_tr.jar
+2013-11-16 00:17:42.358+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util_sv.jar
+2013-11-16 00:17:42.358+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util_pl.jar
+2013-11-16 00:17:42.358+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-modules_bg.jar
+2013-11-16 00:17:42.358+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util_de.jar
+2013-11-16 00:17:42.358+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\boot_pt_BR.jar
+2013-11-16 00:17:42.358+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util_ca.jar
+2013-11-16 00:17:42.358+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util_pt_BR.jar
+2013-11-16 00:17:42.358+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-modules_ko.jar
+2013-11-16 00:17:42.358+0530:    [loader.2] file:/C:/Program%20Files/Java/jdk1.7.0_21/jre/lib/ext/sunjce_provider.jar
+2013-11-16 00:17:42.358+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util-lookup_pt_BR.jar
+2013-11-16 00:17:42.358+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\boot_ro.jar
+2013-11-16 00:17:42.358+0530:    [loader.2] file:/C:/Program%20Files/Java/jdk1.7.0_21/jre/lib/ext/sunmscapi.jar
+2013-11-16 00:17:42.358+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util_fr.jar
+2013-11-16 00:17:42.359+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-modules_gl_ES.jar
+2013-11-16 00:17:42.359+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util_ar_SA.jar
+2013-11-16 00:17:42.359+0530:    [bootstrap] C:\Program Files\Java\jdk1.7.0_21\jre\lib\sunrsasign.jar
+2013-11-16 00:17:42.359+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/boot_fr.jar
+2013-11-16 00:17:42.359+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-modules_ja.jar
+2013-11-16 00:17:42.359+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util-lookup_bg.jar
+2013-11-16 00:17:42.359+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util-lookup_ca.jar
+2013-11-16 00:17:42.359+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util-lookup_nl_NL.jar
+2013-11-16 00:17:42.359+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-modules_nl_NL.jar
+2013-11-16 00:17:42.359+0530:    [bootstrap] C:\Program Files\Java\jdk1.7.0_21\jre\lib\resources.jar
+2013-11-16 00:17:42.359+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-modules_in_ID.jar
+2013-11-16 00:17:42.359+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util-lookup_ro.jar
+2013-11-16 00:17:42.359+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\boot.jar
+2013-11-16 00:17:42.359+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-modules_sq.jar
+2013-11-16 00:17:42.360+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/boot_ko.jar
+2013-11-16 00:17:42.360+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util_bg.jar
+2013-11-16 00:17:42.360+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util_ko.jar
+2013-11-16 00:17:42.360+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util-lookup_de.jar
+2013-11-16 00:17:42.360+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/boot_pt_PT.jar
+2013-11-16 00:17:42.360+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util-lookup_de.jar
+2013-11-16 00:17:42.360+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-modules_pt_PT.jar
+2013-11-16 00:17:42.360+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-modules_gl_ES.jar
+2013-11-16 00:17:42.360+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util_tr.jar
+2013-11-16 00:17:42.360+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-modules_fr.jar
+2013-11-16 00:17:42.360+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util-lookup_ru.jar
+2013-11-16 00:17:42.360+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-modules_tr.jar
+2013-11-16 00:17:42.360+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/boot_bg.jar
+2013-11-16 00:17:42.360+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/boot_ca.jar
+2013-11-16 00:17:42.361+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-modules_de.jar
+2013-11-16 00:17:42.361+0530:    [loader.2] file:/C:/Program%20Files/Java/jdk1.7.0_21/jre/lib/ext/dnsns.jar
+2013-11-16 00:17:42.361+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util-lookup_ro.jar
+2013-11-16 00:17:42.361+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-modules_zh_TW.jar
+2013-11-16 00:17:42.361+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/boot_pl.jar
+2013-11-16 00:17:42.361+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util_pt_PT.jar
+2013-11-16 00:17:42.361+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-modules_pt_BR.jar
+2013-11-16 00:17:42.361+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\org-openide-util.jar
+2013-11-16 00:17:42.361+0530:    [bootstrap] C:\Program Files\Java\jdk1.7.0_21\jre\lib\jce.jar
+2013-11-16 00:17:42.361+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-modules_si.jar
+2013-11-16 00:17:42.361+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util-lookup_ko.jar
+2013-11-16 00:17:42.361+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util_bg.jar
+2013-11-16 00:17:42.361+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-modules_zh_TW.jar
+2013-11-16 00:17:42.361+0530:    [classpath] C:\Program Files\Java\jdk1.7.0_21\lib\tools.jar
+2013-11-16 00:17:42.362+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-modules_cs.jar
+2013-11-16 00:17:42.362+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-modules_in_ID.jar
+2013-11-16 00:17:42.362+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util-lookup_pt_BR.jar
+2013-11-16 00:17:42.362+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util_zh_TW.jar
+2013-11-16 00:17:42.362+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util_gl_ES.jar
+2013-11-16 00:17:42.362+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\boot_tr.jar
+2013-11-16 00:17:42.362+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-modules_ru.jar
+2013-11-16 00:17:42.362+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util_es.jar
+2013-11-16 00:17:42.362+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-modules_ja.jar
+2013-11-16 00:17:42.362+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/boot_ru.jar
+2013-11-16 00:17:42.362+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util_pt_PT.jar
+2013-11-16 00:17:42.362+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\boot_ko.jar
+2013-11-16 00:17:42.362+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/boot_nl_NL.jar
+2013-11-16 00:17:42.362+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-modules_zh_CN.jar
+2013-11-16 00:17:42.363+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-modules_ar_SA.jar
+2013-11-16 00:17:42.363+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/boot_pt_BR.jar
+2013-11-16 00:17:42.363+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\org-openide-util-lookup.jar
+2013-11-16 00:17:42.363+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util_ja.jar
+2013-11-16 00:17:42.363+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util_ca.jar
+2013-11-16 00:17:42.363+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util-lookup_ja.jar
+2013-11-16 00:17:42.363+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util-lookup_in_ID.jar
+2013-11-16 00:17:42.363+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util_si.jar
+2013-11-16 00:17:42.363+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util_ro.jar
+2013-11-16 00:17:42.363+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\boot_sv.jar
+2013-11-16 00:17:42.363+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-modules_ko.jar
+2013-11-16 00:17:42.363+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util-lookup_es.jar
+2013-11-16 00:17:42.363+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-modules_zh_CN.jar
+2013-11-16 00:17:42.363+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util_ro.jar
+2013-11-16 00:17:42.364+0530:    [classpath] C:\Program Files\Java\jdk1.7.0_21\lib\dt.jar
+2013-11-16 00:17:42.364+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/boot_it.jar
+2013-11-16 00:17:42.364+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/boot_gl_ES.jar
+2013-11-16 00:17:42.364+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/boot.jar
+2013-11-16 00:17:42.364+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util-lookup_gl_ES.jar
+2013-11-16 00:17:42.364+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util_de.jar
+2013-11-16 00:17:42.364+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-modules_ca.jar
+2013-11-16 00:17:42.364+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-modules_pt_PT.jar
+2013-11-16 00:17:42.364+0530:    [loader.2] file:/C:/Program%20Files/Java/jdk1.7.0_21/jre/lib/ext/jaccess.jar
+2013-11-16 00:17:42.364+0530:    [bootstrap] C:\Program Files\Java\jdk1.7.0_21\jre\classes
+2013-11-16 00:17:42.364+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util-lookup_nl_NL.jar
+2013-11-16 00:17:42.364+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/boot_si.jar
+2013-11-16 00:17:42.364+0530:    [loader.1] file:/C:/Program%20Files/Java/jdk1.7.0_21/lib/dt.jar
+2013-11-16 00:17:42.364+0530:    [bootstrap] C:\Program Files\Java\jdk1.7.0_21\jre\lib\jfr.jar
+2013-11-16 00:17:42.365+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/boot_cs.jar
+2013-11-16 00:17:42.365+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util-lookup_si.jar
+2013-11-16 00:17:42.365+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util_nl_NL.jar
+2013-11-16 00:17:42.365+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-modules_cs.jar
+2013-11-16 00:17:42.365+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util-lookup_cs.jar
+2013-11-16 00:17:42.365+0530:    [bootstrap] C:\Program Files\Java\jdk1.7.0_21\jre\lib\charsets.jar
+2013-11-16 00:17:42.365+0530:    [classpath] C:\Program Files (x86)\Gephi-0.8.2\platform\lib\locale\org-openide-util_ja.jar
+2013-11-16 00:17:42.365+0530:    [loader.1] file:/C:/Program%20Files%20(x86)/Gephi-0.8.2/platform/lib/locale/org-openide-util-lookup_es.jar
+2013-11-16 00:17:42.365+0530: Library Path:
+2013-11-16 00:17:42.365+0530:   C:\Program Files (x86)\Gephi-0.8.2\bin
+2013-11-16 00:17:42.366+0530:   C:\Windows\Sun\Java\bin
+2013-11-16 00:17:42.366+0530:   C:\Windows\System32
+2013-11-16 00:17:42.366+0530:   C:\Windows
+2013-11-16 00:17:42.366+0530:   C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common
+2013-11-16 00:17:42.367+0530:   C:\Windows\System32
+2013-11-16 00:17:42.367+0530:   C:\Windows
+2013-11-16 00:17:42.367+0530:   C:\Windows\System32\wbem
+2013-11-16 00:17:42.367+0530:   C:\Windows\System32\WindowsPowerShell\v1.0
+2013-11-16 00:17:42.367+0530:   C:\Program Files\MySQL\MySQL Server 5.5\bin
+2013-11-16 00:17:42.367+0530:   C:\Program Files\MATLAB\R2010a\runtime\win64
+2013-11-16 00:17:42.368+0530:   C:\Program Files\MATLAB\R2010a\bin
+2013-11-16 00:17:42.368+0530:   C:\Program Files (x86)\Subversion\bin
+2013-11-16 00:17:42.368+0530:   C:\Go\bin
+2013-11-16 00:17:42.368+0530:   C:\Program Files\Java\jdk1.7.0_21\bin
+2013-11-16 00:17:42.369+0530:   E:\MOOCs\Recommendation Systems\apache-maven-3.1.0\bin
+2013-11-16 00:17:42.369+0530:   E:\MOOCs\Recommendation Systems\lenskit-2.0\bin
+2013-11-16 00:17:42.369+0530:   C:\cygwin64\bin
+2013-11-16 00:17:42.369+0530:   C:\Program Files (x86)\Gephi-0.8.2
+2013-11-16 00:17:42.369+0530:   C:\Program Files (x86)\Gephi-0.8.2
+2013-11-16 00:17:42.369+0530:   C:\Program Files (x86)\Gephi-0.8.2
+2013-11-16 00:17:42.369+0530:   C:\Program Files (x86)\Gephi-0.8.2
+2013-11-16 00:17:42.369+0530:   C:\Program Files (x86)\Gephi-0.8.2
+2013-11-16 00:17:42.370+0530:   C:\Program Files (x86)\Gephi-0.8.2
+2013-11-16 00:17:42.370+0530:   C:\Program Files (x86)\Gephi-0.8.2
+2013-11-16 00:17:42.370+0530:   C:\Program Files (x86)\Gephi-0.8.2
+2013-11-16 00:17:42.370+0530: Garbage Collector: PS Scavenge: [PS Eden Space, PS Survivor Space]
+2013-11-16 00:17:42.370+0530: Garbage Collector: PS MarkSweep: [PS Eden Space, PS Survivor Space, PS Old Gen, PS Perm Gen]
+2013-11-16 00:17:42.371+0530: Memory Pool: Code Cache (Non-heap memory): committed=2.44 MB, used=2.10 MB, max=48.00 MB, threshold=0.00 B
+2013-11-16 00:17:42.371+0530: Memory Pool: PS Eden Space (Heap memory): committed=128.50 MB, used=28.60 MB, max=145.44 MB, threshold=?
+2013-11-16 00:17:42.371+0530: Memory Pool: PS Survivor Space (Heap memory): committed=12.19 MB, used=6.56 MB, max=12.19 MB, threshold=?
+2013-11-16 00:17:42.372+0530: Memory Pool: PS Old Gen (Heap memory): committed=42.69 MB, used=25.16 MB, max=341.38 MB, threshold=321.38 MB
+2013-11-16 00:17:42.372+0530: Memory Pool: PS Perm Gen (Non-heap memory): committed=42.69 MB, used=42.69 MB, max=384.00 MB, threshold=0.00 B
+2013-11-16 00:17:42.372+0530: VM Arguments: [-Xms64m, -Xmx512m, -Xverify:none, -Dsun.java2d.noddraw=true, -Dsun.awt.noerasebackground=true, -Dnetbeans.indexing.noFileRefresh=true, -Dplugin.manager.check.interval=EVERY_DAY, -XX:MaxPermSize=384m, -Dnetbeans.user.dir=C:\Program Files (x86)\Gephi-0.8.2\bin, -Djdk.home=C:\Program Files\Java\jdk1.7.0_21, -splash:C:\Users\puneeth\AppData\Roaming\.gephi\0.8.2\dev\var\cache\splash.png, -Dnetbeans.home=C:\Program Files (x86)\Gephi-0.8.2\platform, -Dnetbeans.user=C:\Users\puneeth\AppData\Roaming\.gephi\0.8.2\dev, -Dnetbeans.default_userdir_root=, -XX:+HeapDumpOnOutOfMemoryError, -XX:HeapDumpPath=C:\Users\puneeth\AppData\Roaming\.gephi\0.8.2\dev\var\log\heapdump.hprof, -Dnetbeans.system_http_proxy=192.168.3.254:8080, -Dnetbeans.system_http_non_proxy_hosts=<local>, -Dsun.awt.keepWorkingSetOnMinimize=true, -Dnetbeans.dirs=C:\Program Files (x86)\Gephi-0.8.2\gephi;C:\Program Files (x86)\Gephi-0.8.2\platform]
+2013-11-16 00:17:42.372+0530: System properties:
+2013-11-16 00:17:42.373+0530:   netbeans.user = C:\Users\puneeth\AppData\Roaming\.gephi\0.8.2\dev
+2013-11-16 00:17:42.373+0530:   sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+2013-11-16 00:17:42.373+0530:   netbeans.autoupdate.version = 1.23
+2013-11-16 00:17:42.373+0530:   https.proxyHost = 192.168.3.254
+2013-11-16 00:17:42.373+0530:   plugin.manager.check.interval = EVERY_DAY
+2013-11-16 00:17:42.373+0530:   sun.desktop = windows
+2013-11-16 00:17:42.373+0530:   netbeans.default_userdir_root = 
+2013-11-16 00:17:42.373+0530:   http.proxyPort = 8080
+2013-11-16 00:17:42.374+0530:   user.name = puneeth
+2013-11-16 00:17:42.374+0530:   user.language = en
+2013-11-16 00:17:42.374+0530:   sun.boot.library.path = C:\Program Files\Java\jdk1.7.0_21\jre\bin
+2013-11-16 00:17:42.374+0530:   user.timezone = Asia/Calcutta
+2013-11-16 00:17:42.374+0530:   sun.arch.data.model = 64
+2013-11-16 00:17:42.374+0530:   netbeans.productversion = Gephi 0.8.2 201210100934
+2013-11-16 00:17:42.374+0530:   sun.cpu.isalist = amd64
+2013-11-16 00:17:42.374+0530:   sun.jnu.encoding = Cp1252
+2013-11-16 00:17:42.374+0530:   file.encoding.pkg = sun.io
+2013-11-16 00:17:42.374+0530:   file.separator = \
+2013-11-16 00:17:42.374+0530:   user.country = US
+2013-11-16 00:17:42.374+0530:   sun.awt.noerasebackground = true
+2013-11-16 00:17:42.374+0530:   netbeans.buildnumber = 201210100934
+2013-11-16 00:17:42.375+0530:   org.openide.version = deprecated
+2013-11-16 00:17:42.375+0530:   netbeans.hash.code = unique=0832e5089-a3aa-4953-ab04-4d696957aff7_e95308d2-efbf-4cb2-a015-7aaf62210d99
+2013-11-16 00:17:42.375+0530:   netbeans.system_http_proxy = 192.168.3.254:8080
+2013-11-16 00:17:42.375+0530:   https.proxyPort = 8080
+2013-11-16 00:17:42.375+0530:   netbeans.autoupdate.country = US
+2013-11-16 00:17:42.375+0530:   netbeans.indexing.noFileRefresh = true
+2013-11-16 00:17:42.375+0530:   netbeans.user.dir = C:\Program Files (x86)\Gephi-0.8.2\bin
+2013-11-16 00:17:42.375+0530:   sun.awt.keepWorkingSetOnMinimize = true
+2013-11-16 00:17:42.375+0530:   path.separator = ;
+2013-11-16 00:17:42.375+0530:   user.variant = 
+2013-11-16 00:17:42.375+0530:   netbeans.dynamic.classpath = C:\Program Files (x86)\Gephi-0.8.2\platform\core\core.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\org-openide-filesystems.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\core_ar_SA.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\core_bg.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\core_ca.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\core_cs.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\core_de.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\core_es.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\core_fr.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\core_gl_ES.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\core_in_ID.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\core_it.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\core_ja.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\core_ko.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\core_nl_NL.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\core_pl.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\core_pt_BR.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\core_pt_PT.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\core_ro.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\core_ru.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\core_si.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\core_sq.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\core_sv.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\core_tr.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\core_zh_CN.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\core_zh_TW.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\org-openide-filesystems_ar_SA.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\org-openide-filesystems_bg.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\org-openide-filesystems_ca.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\org-openide-filesystems_cs.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\org-openide-filesystems_de.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\org-openide-filesystems_es.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\org-openide-filesystems_fr.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\org-openide-filesystems_gl_ES.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\org-openide-filesystems_in_ID.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\org-openide-filesystems_it.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\org-openide-filesystems_ja.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\org-openide-filesystems_ko.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\org-openide-filesystems_nl_NL.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\org-openide-filesystems_pl.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\org-openide-filesystems_pt_BR.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\org-openide-filesystems_pt_PT.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\org-openide-filesystems_ro.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\org-openide-filesystems_ru.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\org-openide-filesystems_si.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\org-openide-filesystems_sq.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\org-openide-filesystems_sv.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\org-openide-filesystems_tr.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\org-openide-filesystems_zh_CN.jar;C:\Program Files (x86)\Gephi-0.8.2\platform\core\locale\org-openide-filesystems_zh_TW.jar;C:\Program Files (x86)\Gephi-0.8.2\gephi\core\locale\core_gephi.jar
+2013-11-16 00:17:42.376+0530:   jna.boot.library.name = jnidispatch-340
+2013-11-16 00:17:42.376+0530:   sun.awt.enableExtraMouseButtons = true
+2013-11-16 00:17:42.376+0530:   sun.io.unicode.encoding = UnicodeLittle
+2013-11-16 00:17:42.376+0530:   netbeans.autoupdate.variant = 
+2013-11-16 00:17:42.376+0530:   awt.toolkit = sun.awt.windows.WToolkit
+2013-11-16 00:17:42.376+0530:   user.script = 
+2013-11-16 00:17:42.376+0530:   org.openide.major.version = IDE/1
+2013-11-16 00:17:42.376+0530:   user.home = C:\Users\puneeth
+2013-11-16 00:17:42.376+0530:   netbeans.home = C:\Program Files (x86)\Gephi-0.8.2\platform
+2013-11-16 00:17:42.376+0530:   org.xml.sax.driver = com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser
+2013-11-16 00:17:42.376+0530:   sun.java2d.noddraw = true
+2013-11-16 00:17:42.377+0530:   jdk.home = C:\Program Files\Java\jdk1.7.0_21
+2013-11-16 00:17:42.377+0530:   org.openide.specification.version = 6.2
+2013-11-16 00:17:42.377+0530:   sun.cpu.endian = little
+2013-11-16 00:17:42.377+0530:   sun.os.patch.level = 
+2013-11-16 00:17:42.377+0530:   netbeans.dirs = C:\Program Files (x86)\Gephi-0.8.2\gephi;C:\Program Files (x86)\Gephi-0.8.2\platform
+2013-11-16 00:17:42.377+0530:   http.proxyHost = 192.168.3.254
+2013-11-16 00:17:42.377+0530:   netbeans.autoupdate.language = en
+2013-11-16 00:17:42.377+0530:   user.dir = C:\Program Files (x86)\Gephi-0.8.2
+2013-11-16 00:17:42.377+0530:   file.encoding = Cp1252
+2013-11-16 00:17:42.377+0530:   netbeans.system_http_non_proxy_hosts = <local>
+2013-11-16 00:17:42.377+0530: Neo4j Kernel properties:
+2013-11-16 00:17:42.377+0530:   store_dir=C:\Users\puneeth\Desktop\trial_adeha(m.)_0
+2013-11-16 00:17:42.377+0530:   logical_log=C:\Users\puneeth\Desktop\trial_adeha(m.)_0\nioneo_logical.log
+2013-11-16 00:17:42.378+0530:   node_auto_indexing=false
+2013-11-16 00:17:42.378+0530:   neostore.relationshipstore.db.mapped_memory=100M
+2013-11-16 00:17:42.378+0530:   neostore.nodestore.db.mapped_memory=20M
+2013-11-16 00:17:42.378+0530:   use_memory_mapped_buffers=false
+2013-11-16 00:17:42.378+0530:   rebuild_idgenerators_fast=true
+2013-11-16 00:17:42.378+0530:   neostore.propertystore.db.index.keys.mapped_memory=1M
+2013-11-16 00:17:42.378+0530:   neostore.propertystore.db.arrays.mapped_memory=130M
+2013-11-16 00:17:42.378+0530:   neostore.propertystore.db.strings.mapped_memory=130M
+2013-11-16 00:17:42.378+0530:   neo_store=C:\Users\puneeth\Desktop\trial_adeha(m.)_0\neostore
+2013-11-16 00:17:42.378+0530:   neostore.propertystore.db.index.mapped_memory=1M
+2013-11-16 00:17:42.378+0530:   create=true
+2013-11-16 00:17:42.378+0530:   neostore.propertystore.db.mapped_memory=90M
+2013-11-16 00:17:42.378+0530:   relationship_auto_indexing=false
+2013-11-16 00:17:42.378+0530: Storage files:
+2013-11-16 00:17:42.379+0530:   active_tx_log: 11.00 B
+2013-11-16 00:17:42.379+0530:   index:
+2013-11-16 00:17:42.379+0530:     lucene:
+2013-11-16 00:17:42.380+0530:       node:
+2013-11-16 00:17:42.380+0530:         words:
+2013-11-16 00:17:42.380+0530:           segments.gen: 20.00 B
+2013-11-16 00:17:42.380+0530:           segments_1: 514.00 B
+2013-11-16 00:17:42.381+0530:           _ka.fdt: 14.39 kB
+2013-11-16 00:17:42.381+0530:           _ka.fdx: 5.15 kB
+2013-11-16 00:17:42.381+0530:           _ka.fnm: 16.00 B
+2013-11-16 00:17:42.381+0530:           _ka.frq: 2.45 kB
+2013-11-16 00:17:42.381+0530:           _ka.nrm: 663.00 B
+2013-11-16 00:17:42.381+0530:           _ka.prx: 1.29 kB
+2013-11-16 00:17:42.382+0530:           _ka.tii: 215.00 B
+2013-11-16 00:17:42.382+0530:           _ka.tis: 14.44 kB
+2013-11-16 00:17:42.382+0530:           _kb.cfs: 255.00 B
+2013-11-16 00:17:42.382+0530:         - Total: 39.36 kB
+2013-11-16 00:17:42.382+0530:       - Total: 39.36 kB
+2013-11-16 00:17:42.382+0530:     - Total: 39.36 kB
+2013-11-16 00:17:42.383+0530:     lucene-store.db: 40.00 B
+2013-11-16 00:17:42.383+0530:     lucene.log.active: 4.00 B
+2013-11-16 00:17:42.383+0530:     lucene.log.v0: 105.80 kB
+2013-11-16 00:17:42.383+0530:   - Total: 145.20 kB
+2013-11-16 00:17:42.383+0530:   index.db: 103.00 B
+2013-11-16 00:17:42.383+0530:   lock: 0.00 B
+2013-11-16 00:17:42.384+0530:   messages.log: 112.94 kB
+2013-11-16 00:17:42.384+0530:   neostore: 54.00 B
+2013-11-16 00:17:42.384+0530:   neostore.id: 9.00 B
+2013-11-16 00:17:42.384+0530:   neostore.nodestore.db: 5.81 kB
+2013-11-16 00:17:42.384+0530:   neostore.nodestore.db.id: 9.00 B
+2013-11-16 00:17:42.384+0530:   neostore.propertystore.db: 68.23 kB
+2013-11-16 00:17:42.385+0530:   neostore.propertystore.db.arrays: 128.00 B
+2013-11-16 00:17:42.385+0530:   neostore.propertystore.db.arrays.id: 9.00 B
+2013-11-16 00:17:42.385+0530:   neostore.propertystore.db.id: 9.00 B
+2013-11-16 00:17:42.385+0530:   neostore.propertystore.db.index: 27.00 B
+2013-11-16 00:17:42.385+0530:   neostore.propertystore.db.index.id: 9.00 B
+2013-11-16 00:17:42.385+0530:   neostore.propertystore.db.index.keys: 152.00 B
+2013-11-16 00:17:42.386+0530:   neostore.propertystore.db.index.keys.id: 9.00 B
+2013-11-16 00:17:42.386+0530:   neostore.propertystore.db.strings: 384.00 B
+2013-11-16 00:17:42.386+0530:   neostore.propertystore.db.strings.id: 9.00 B
+2013-11-16 00:17:42.386+0530:   neostore.relationshipstore.db: 21.88 kB
+2013-11-16 00:17:42.386+0530:   neostore.relationshipstore.db.id: 9.00 B
+2013-11-16 00:17:42.387+0530:   neostore.relationshiptypestore.db: 5.00 B
+2013-11-16 00:17:42.387+0530:   neostore.relationshiptypestore.db.id: 9.00 B
+2013-11-16 00:17:42.387+0530:   neostore.relationshiptypestore.db.names: 76.00 B
+2013-11-16 00:17:42.387+0530:   neostore.relationshiptypestore.db.names.id: 9.00 B
+2013-11-16 00:17:42.387+0530:   nioneo_logical.log.1: 16.00 B
+2013-11-16 00:17:42.387+0530:   nioneo_logical.log.active: 4.00 B
+2013-11-16 00:17:42.388+0530:   nioneo_logical.log.v0: 325.03 kB
+2013-11-16 00:17:42.388+0530:   store_lock: 0.00 B
+2013-11-16 00:17:42.388+0530:   tm_tx_log.1: 29.13 kB
+2013-11-16 00:17:42.388+0530:   tm_tx_log.2: 0.00 B
+2013-11-16 00:17:42.388+0530: Id usage:
+2013-11-16 00:17:42.388+0530:   NodeStore: used=661 high=660
+2013-11-16 00:17:42.389+0530:   RelationshipStore: used=679 high=678
+2013-11-16 00:17:42.389+0530:   RelationshipTypeStore: used=1 high=0
+2013-11-16 00:17:42.389+0530:   PropertyStore: used=1704 high=1703
+2013-11-16 00:17:42.389+0530:   PropertyIndexStore: used=3 high=2
+2013-11-16 00:17:42.389+0530:   StringPropertyStore: used=3 high=2
+2013-11-16 00:17:42.389+0530:   ArrayPropertyStore: used=1 high=0
+2013-11-16 00:17:42.390+0530: --- CONFIGURATION END ---
+2013-11-16 00:17:42.392+0530: Extension org.neo4j.kernel.KernelExtension[kernel udc] loaded ok
+2013-11-16 00:17:42.483+0530: Extension org.neo4j.kernel.KernelExtension[kernel jmx] loaded ok
+2013-11-16 00:18:46.628+0530: Closed log C:\Users\puneeth\Desktop\trial_adeha(m.)_0\nioneo_logical.log
+2013-11-16 00:18:48.004+0530: NeoStore closed
+2013-11-16 00:18:48.005+0530: NeoStore closed
+2013-11-16 00:18:48.013+0530: TM shutting down
